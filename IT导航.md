@@ -3,7 +3,7 @@
 ---
 
 | 常用平台 | 教程 | 工具 | 其他 |
-|:--------:|:---------:|:-------:|:-----:|:------:|
+|:--------:|:---------:|:-------:|:-----:|
 |[GitHub](https://github.com/)|[菜鸟教程](https://www.runoob.com/)|[在线工具](http://tool.oschina.net/)|[linux脚本](https://linuxeye.com/)|
 |[博客园](https://www.cnblogs.com/)|[w3school](https://www.w3school.com.cn/)|[网盘下载](http://pandownload.com/)|[VI键盘图](http://www.runoob.com/linux/linux-vim.html)|
 |[Freebuf](https://www.freebuf.com/)|[w3schools](https://www.w3schools.com/)|[远程连接](https://winscp.net/eng/docs/lang:chs)|[http协议详解](https://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html)|
