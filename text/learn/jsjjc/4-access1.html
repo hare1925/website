@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>第六章-access数据库.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>div.oembedall-githubrepos{border:1px solid #DDD;border-radius:4px;list-style-type:none;margin:0 0 10px;padding:8px 10px 0;font:13.34px/1.4 helvetica,arial,freesans,clean,sans-serif;width:452px;background-color:#fff}div.oembedall-githubrepos .oembedall-body{background:-moz-linear-gradient(center top,#FAFAFA,#EFEFEF);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#EFEFEF));border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top:1px solid #EEE;margin-left:-10px;margin-top:8px;padding:5px 10px;width:100%}div.oembedall-githubrepos h3{font-size:14px;margin:0;padding-left:18px;white-space:nowrap}div.oembedall-githubrepos p.oembedall-description{color:#444;font-size:12px;margin:0 0 3px}div.oembedall-githubrepos p.oembedall-updated-at{color:#888;font-size:11px;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats{border:none;float:right;font-size:11px;font-weight:700;padding-left:15px;position:relative;z-index:5;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats li{border:none;color:#666;display:inline-block;list-style-type:none;margin:0!important}div.oembedall-githubrepos ul.oembedall-repo-stats li a{background-color:transparent;border:none;color:#666!important;background-position:5px -2px;background-repeat:no-repeat;border-left:1px solid #DDD;display:inline-block;height:21px;line-height:21px;padding:0 5px 0 23px}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a{border-left:medium none;margin-right:-3px}div.oembedall-githubrepos ul.oembedall-repo-stats li a:hover{background:5px -27px no-repeat #4183C4;color:#FFF!important;text-decoration:none}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a:hover{border-bottom-left-radius:3px;border-top-left-radius:3px}ul.oembedall-repo-stats li:last-child a:hover{border-bottom-right-radius:3px;border-top-right-radius:3px}span.oembedall-closehide{background-color:#aaa;border-radius:2px;cursor:pointer;margin-right:3px}div.oembedall-container{margin-top:5px;text-align:left}.oembedall-ljuser{font-weight:700}.oembedall-ljuser img{vertical-align:bottom;border:0;padding-right:1px}.oembedall-stoqembed{border-bottom:1px dotted #999;float:left;overflow:hidden;width:730px;line-height:1;background:#FFF;color:#000;font-family:Arial,Liberation Sans,DejaVu Sans,sans-serif;font-size:80%;text-align:left;margin:0;padding:0}.oembedall-stoqembed a{color:#07C;text-decoration:none;margin:0;padding:0}.oembedall-stoqembed a:hover{text-decoration:underline}.oembedall-stoqembed a:visited{color:#4A6B82}.oembedall-stoqembed h3{font-family:Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;font-size:130%;font-weight:700;margin:0;padding:0}.oembedall-stoqembed .oembedall-reputation-score{color:#444;font-size:120%;font-weight:700;margin-right:2px}.oembedall-stoqembed .oembedall-user-info{height:35px;width:185px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-gravatar32{float:left;height:32px;width:32px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-details{float:left;margin-left:5px;overflow:hidden;white-space:nowrap;width:145px}.oembedall-stoqembed .oembedall-question-hyperlink{font-weight:700}.oembedall-stoqembed .oembedall-stats{background:#EEE;margin:0 0 0 7px;padding:4px 7px 6px;width:58px}.oembedall-stoqembed .oembedall-statscontainer{float:left;margin-right:8px;width:86px}.oembedall-stoqembed .oembedall-votes{color:#555;padding:0 0 7px;text-align:center}.oembedall-stoqembed .oembedall-vote-count-post{font-size:240%;color:#808185;display:block;font-weight:700}.oembedall-stoqembed .oembedall-views{color:#999;padding-top:4px;text-align:center}.oembedall-stoqembed .oembedall-status{margin-top:-3px;padding:4px 0;text-align:center;background:#75845C;color:#FFF}.oembedall-stoqembed .oembedall-status strong{color:#FFF;display:block;font-size:140%}.oembedall-stoqembed .oembedall-summary{float:left;width:635px}.oembedall-stoqembed .oembedall-excerpt{line-height:1.2;margin:0;padding:0 0 5px}.oembedall-stoqembed .oembedall-tags{float:left;line-height:18px}.oembedall-stoqembed .oembedall-tags a:hover{text-decoration:none}.oembedall-stoqembed .oembedall-post-tag{background-color:#E0EAF1;border-bottom:1px solid #3E6D8E;border-right:1px solid #7F9FB6;color:#3E6D8E;font-size:90%;line-height:2.4;margin:2px 2px 2px 0;padding:3px 4px;text-decoration:none;white-space:nowrap}.oembedall-stoqembed .oembedall-post-tag:hover{background-color:#3E6D8E;border-bottom:1px solid #37607D;border-right:1px solid #37607D;color:#E0EAF1}.oembedall-stoqembed .oembedall-fr{float:right}.oembedall-stoqembed .oembedall-statsarrow{background-image:url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=3);background-repeat:no-repeat;overflow:hidden;background-position:0 -435px;float:right;height:13px;margin-top:12px;width:7px}.oembedall-facebook1{border:1px solid #1A3C6C;padding:0;font:13.34px/1.4 verdana;width:500px}.oembedall-facebook2{background-color:#627add}.oembedall-facebook2 a{color:#e8e8e8;text-decoration:none}.oembedall-facebookBody{background-color:#fff;vertical-align:top;padding:5px}.oembedall-facebookBody .contents{display:inline-block;width:100%}.oembedall-facebookBody div img{float:left;margin-right:5px}div.oembedall-lanyard{-webkit-box-shadow:none;-webkit-transition-delay:0s;-webkit-transition-duration:.4000000059604645s;-webkit-transition-property:width;-webkit-transition-timing-function:cubic-bezier(0.42,0,.58,1);background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;border-width:0;box-shadow:none;color:#112644;display:block;float:left;font-family:'Trebuchet MS',Trebuchet,sans-serif;font-size:16px;height:253px;line-height:19px;margin:0;max-width:none;min-height:0;outline:#112644 0;overflow-x:visible;overflow-y:visible;padding:0;position:relative;text-align:left;vertical-align:baseline;width:804px}div.oembedall-lanyard .tagline{font-size:1.5em}div.oembedall-lanyard .wrapper{overflow:hidden;clear:both}div.oembedall-lanyard .split{float:left;display:inline}div.oembedall-lanyard .prominent-place .flag:active,div.oembedall-lanyard .prominent-place .flag:focus,div.oembedall-lanyard .prominent-place .flag:hover,div.oembedall-lanyard .prominent-place .flag:link,div.oembedall-lanyard .prominent-place .flag:visited{float:left;display:block;width:48px;height:48px;position:relative;top:-5px;margin-right:10px}div.oembedall-lanyard .place-context{font-size:.889em}div.oembedall-lanyard .prominent-place .sub-place{display:block}div.oembedall-lanyard .prominent-place{font-size:1.125em;line-height:1.1em;font-weight:400}div.oembedall-lanyard .main-date{color:#8CB4E0;font-weight:700;line-height:1.1}div.oembedall-lanyard .first{width:48.57%;margin:0 0 0 2.857%}.mermaid .label{color:#333}.node circle,.node polygon,.node rect{fill:#cde498;stroke:#13540c;stroke-width:1px}.edgePath .path{stroke:green;stroke-width:1.5px}.cluster rect{fill:#cdffb2;rx:40;stroke:#6eaa49;stroke-width:1px}.cluster text{fill:#333}.actor{stroke:#13540c;fill:#cde498}text.actor{fill:#000;stroke:none}.actor-line{stroke:grey}.messageLine0{stroke-width:1.5;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#333}.messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#arrowhead{fill:#333}#crosshead path{fill:#333!important;stroke:#333!important}.messageText{fill:#333;stroke:none}.labelBox{stroke:#326932;fill:#cde498}.labelText,.loopText{fill:#000;stroke:none}.loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#326932}.note{stroke:#6eaa49;fill:#fff5ad}.noteText{fill:#000;stroke:none;font-family:'trebuchet ms',verdana,arial;font-size:14px}.section{stroke:none;opacity:.2}.section0,.section2{fill:#6eaa49}.section1,.section3{fill:#fff;opacity:.2}.sectionTitle0,.sectionTitle1,.sectionTitle2,.sectionTitle3{fill:#333}.sectionTitle{text-anchor:start;font-size:11px;text-height:14px}.grid .tick{stroke:lightgrey;opacity:.3;shape-rendering:crispEdges}.grid path{stroke-width:0}.today{fill:none;stroke:red;stroke-width:2px}.task{stroke-width:2}.taskText{text-anchor:middle;font-size:11px}.taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}.taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}.taskText0,.taskText1,.taskText2,.taskText3{fill:#fff}.task0,.task1,.task2,.task3{fill:#487e3a;stroke:#13540c}.taskTextOutside0,.taskTextOutside1,.taskTextOutside2,.taskTextOutside3{fill:#000}.active0,.active1,.active2,.active3{fill:#cde498;stroke:#13540c}.activeText0,.activeText1,.activeText2,.activeText3{fill:#000!important}.done0,.done1,.done2,.done3{stroke:grey;fill:lightgrey;stroke-width:2}.doneText0,.doneText1,.doneText2,.doneText3{fill:#000!important}.crit0,.crit1,.crit2,.crit3{stroke:#f88;fill:red;stroke-width:2}.activeCrit0,.activeCrit1,.activeCrit2,.activeCrit3{stroke:#f88;fill:#cde498;stroke-width:2}.doneCrit0,.doneCrit1,.doneCrit2,.doneCrit3{stroke:#f88;fill:lightgrey;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}.activeCritText0,.activeCritText1,.activeCritText2,.activeCritText3,.doneCritText0,.doneCritText1,.doneCritText2,.doneCritText3{fill:#000!important}.titleText{text-anchor:middle;font-size:18px;fill:#000}text{font-family:'trebuchet ms',verdana,arial;font-size:14px}html{height:100%}body{margin:0!important;padding:5px 20px 26px!important;background-color:#fff;font-family:"Lucida Grande","Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Lucida Sans Unicode",Helvetica,Arial,sans-serif;font-size:.9em;overflow-x:hidden;overflow-y:auto}br,h1,h2,h3,h4,h5,h6{clear:both}hr.page{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x;border:0;height:3px;padding:0}hr.underscore{border-top-style:dashed!important}body >:first-child{margin-top:0!important}img.plugin{box-shadow:0 1px 3px rgba(0,0,0,.1);border-radius:3px}iframe{border:0}figure{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}kbd{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-moz-box-shadow:1px 2px 2px #ddd;-webkit-box-shadow:1px 2px 2px #ddd;box-shadow:1px 2px 2px #ddd;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-o-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-webkit-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:linear-gradient(top,#eee,#f9f9f9,#eee);padding:1px 3px;font-family:inherit;font-size:.85em}.oembeded .oembed_photo{display:inline-block}img[data-echo]{margin:25px 0;width:100px;height:100px;background:url(../img/ajax.gif) center center no-repeat #fff}.spinner{display:inline-block;width:10px;height:10px;margin-bottom:-.1em;border:2px solid rgba(0,0,0,.5);border-top-color:transparent;border-radius:100%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.spinner:after{content:'';display:block;width:0;height:0;position:absolute;top:-6px;left:0;border:4px solid transparent;border-bottom-color:rgba(0,0,0,.5);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}p.toc{margin:0!important}p.toc ul{padding-left:10px}p.toc>ul{padding:10px;margin:0 10px;display:inline-block;border:1px solid #ededed;border-radius:5px}p.toc li,p.toc ul{list-style-type:none}p.toc li{width:100%;padding:0;overflow:hidden}p.toc li a::after{content:"."}p.toc li a:before{content:"• "}p.toc h5{text-transform:uppercase}p.toc .title{float:left;padding-right:3px}p.toc .number{margin:0;float:right;padding-left:3px;background:#fff;display:none}input.task-list-item{margin-left:-1.62em}.markdown{font-family:"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;padding:20px}.markdown a{text-decoration:none;vertical-align:baseline}.markdown a:hover{text-decoration:underline}.markdown h1{font-size:2.2em;font-weight:700;margin:1.5em 0 1em}.markdown h2{font-size:1.8em;font-weight:700;margin:1.275em 0 .85em}.markdown h3{font-size:1.6em;font-weight:700;margin:1.125em 0 .75em}.markdown h4{font-size:1.4em;font-weight:700;margin:.99em 0 .66em}.markdown h5{font-size:1.2em;font-weight:700;margin:.855em 0 .57em}.markdown h6{font-size:1em;font-weight:700;margin:.75em 0 .5em}.markdown h1+p,.markdown h1:first-child,.markdown h2+p,.markdown h2:first-child,.markdown h3+p,.markdown h3:first-child,.markdown h4+p,.markdown h4:first-child,.markdown h5+p,.markdown h5:first-child,.markdown h6+p,.markdown h6:first-child{margin-top:0}.markdown hr{border:1px solid #ccc}.markdown p{margin:1em 0;word-wrap:break-word}.markdown ol{list-style-type:decimal}.markdown li{display:list-item;line-height:1.4em}.markdown blockquote{margin:1em 20px}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown blockquote cite:before{content:'\2014 \00A0'}.markdown .code{border-radius:3px;word-wrap:break-word}.markdown pre{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;overflow:auto;padding:.5em}.markdown pre code{border:0;display:block}.markdown pre>code{font-family:Consolas,Inconsolata,Courier,monospace;font-weight:700;white-space:pre;margin:0}.markdown code{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;padding:0 5px;margin:0 2px}.markdown img{max-width:100%}.markdown mark{color:#000;background-color:#fcf8e3}.markdown table{padding:0;border-collapse:collapse;border-spacing:0;margin-bottom:16px}.markdown table tr td,.markdown table tr th{border:1px solid #ccc;margin:0;padding:6px 13px}.markdown table tr th{font-weight:700}.markdown table tr th>:first-child{margin-top:0}.markdown table tr th>:last-child{margin-bottom:0}.markdown table tr td>:first-child{margin-top:0}.markdown table tr td>:last-child{margin-bottom:0}@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);.haroopad{padding:20px;color:#222;font-size:15px;font-family:"Roboto Condensed",Tauri,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}.haroopad a{color:#3269a0}.haroopad a:hover{color:#4183c4}.haroopad h2{border-bottom:1px solid #e6e6e6}.haroopad h6{color:#777}.haroopad hr{border:1px solid #e6e6e6}.haroopad blockquote>code,.haroopad h1>code,.haroopad h2>code,.haroopad h3>code,.haroopad h4>code,.haroopad h5>code,.haroopad h6>code,.haroopad li>code,.haroopad p>code,.haroopad td>code{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:85%;background-color:rgba(0,0,0,.02);padding:.2em .5em;border:1px solid #efefef}.haroopad pre>code{font-size:1em;letter-spacing:-1px;font-weight:700}.haroopad blockquote{border-left:4px solid #e6e6e6;padding:0 15px;color:#777}.haroopad table{background-color:#fafafa}.haroopad table tr td,.haroopad table tr th{border:1px solid #e6e6e6}.haroopad table tr:nth-child(2n){background-color:#f2f2f2}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment,.hljs-doctype,.hljs-javadoc,.hljs-pi,.lisp .hljs-string{color:#93a1a1}.css .hljs-tag,.hljs-addition,.hljs-keyword,.hljs-request,.hljs-status,.hljs-winutils,.method,.nginx .hljs-title{color:#859900}.hljs-command,.hljs-dartdoc,.hljs-hexcolor,.hljs-link_url,.hljs-number,.hljs-phpdoc,.hljs-regexp,.hljs-rules .hljs-value,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#2aa198}.css .hljs-function,.hljs-built_in,.hljs-chunk,.hljs-decorator,.hljs-id,.hljs-identifier,.hljs-localvars,.hljs-title,.vhdl .hljs-literal{color:#268bd2}.hljs-attribute,.hljs-class .hljs-title,.hljs-constant,.hljs-link_reference,.hljs-parent,.hljs-type,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number{color:#b58900}.css .hljs-pseudo,.diff .hljs-change,.hljs-attr_selector,.hljs-cdata,.hljs-header,.hljs-pragma,.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-shebang,.hljs-special,.hljs-subst,.hljs-symbol,.hljs-symbol .hljs-string{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#eee8d5}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:2px;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:2px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:1em}.MathJax_MenuRadioCheck.RTL{right:1em;left:auto}.MathJax_MenuLabel{padding:2px 2em 4px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #CCC;margin:4px 1px 0}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:Highlight;color:HighlightText}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown haroopad">
+<h1 id="access数据库"><a name="access数据库" href="#access数据库"></a>access数据库</h1><h2 id="一、数据库的基本概念（识记）"><a name="一、数据库的基本概念（识记）" href="#一、数据库的基本概念（识记）"></a>一、数据库的基本概念（识记）</h2><p>数据库技术是现代信息科学与技术的重要组成部分，是计算机数据处理与信息管理系统的核心。<br>数据库技术研究和解决了计算机信息处理过程中大量数据有效的组织和存储的问题，在数据库系统中减少数据存储冗余、实现数据共享、保障数据安全以及高效地检索数据和处理数据。</p><h3 id="1、数据库的作用和特点"><a name="1、数据库的作用和特点" href="#1、数据库的作用和特点"></a>1、数据库的作用和特点</h3><p>1968年，世界上诞生第一个商品化的信息管理系统（information management system），从此，数据库技术得到了迅猛发展。<br>现在数据库已经成为信息管理、办公自动化、计算机辅助设计等应用的主要软件工具之一，帮助人们处理各种各样的信息数据。</p><pre><code data-origin="<pre><code>数据处理（Data processing）是对数据的采集、存储、检索、加工、变换和传输。
+Ps:
+数据是对事实、概念或指令的一种表达形式，可由人工或自动化装置进行处理。
+数据的形式可以是：数字、文字、图形或声音等。
+数据经过解释并赋予一定的意义之后，便成了信息。
+数据处理的基本目的是：从大量的、可能是杂乱无章的、难以理解的数据中抽取并推导出对某些特定的人们来说是有价值、有意义的数据。
+数据处理贯穿于社会生产和社会生活的各个领域。
+数据处理技术的发展及应用的广度和深度，极大的形象着人类社会发展的进程，数据处理离不开软件的支持。
+数据处理软件：
+用以书写处理程序的各种程序设计语言及其编译程序
+管理数据的文件系统和数据库系统
+各种数据处理方法的应用软件包
+为保证数据安全可靠，还有一整套数据安全保密的技术。
+</code></pre>">数据处理（Data processing）是对数据的采集、存储、检索、加工、变换和传输。
+Ps:
+数据是对事实、概念或指令的一种表达形式，可由人工或自动化装置进行处理。
+数据的形式可以是：数字、文字、图形或声音等。
+数据经过解释并赋予一定的意义之后，便成了信息。
+数据处理的基本目的是：从大量的、可能是杂乱无章的、难以理解的数据中抽取并推导出对某些特定的人们来说是有价值、有意义的数据。
+数据处理贯穿于社会生产和社会生活的各个领域。
+数据处理技术的发展及应用的广度和深度，极大的形象着人类社会发展的进程，数据处理离不开软件的支持。
+数据处理软件：
+用以书写处理程序的各种程序设计语言及其编译程序
+管理数据的文件系统和数据库系统
+各种数据处理方法的应用软件包
+为保证数据安全可靠，还有一整套数据安全保密的技术。
+</code></pre><p><strong>计算机数据管理技术的的几个阶段：</strong><br>随着计算机硬件、软件和计算机应用的发展二发展，已经经历了：人工管理、文件系统、数据库系统、分布式数据库系统等几个阶段。<br><strong>1.人工管理阶段</strong></p><pre><code data-origin="<pre><code>1.数据不保存
+2.数据需要有应用程序自己进行管理
+3.这一时期基本上没有文件概念数据的组织方式，必须由程序员自行设计。
+4.数据不共享
+</code></pre>">1.数据不保存
+2.数据需要有应用程序自己进行管理
+3.这一时期基本上没有文件概念数据的组织方式，必须由程序员自行设计。
+4.数据不共享
+</code></pre><p><strong>2.文件管理阶段</strong></p><pre><code data-origin="<pre><code>1.数据可以长期保存
+2.由文件系统管理数据
+3.文件的形式已经多样化
+4.数据具有一定的独立性
+</code></pre>">1.数据可以长期保存
+2.由文件系统管理数据
+3.文件的形式已经多样化
+4.数据具有一定的独立性
+</code></pre><p><strong>3.数据库管理阶段</strong><br>数据库系统克服了文件系统的缺陷，提供了对数据更高级、更有效的管理。<br>这个阶段的程序和数据的联系通过数据库管理系统（Data，base management system，SBMS）来实现。</p><pre><code data-origin="<pre><code>1.采用数据模型表示复杂的数据结构
+2.有较高的数据独立性
+3.数据库系统为用户提供了非常方便的用户接口
+4.数据库系统提供了数据控制功能
+    1.数据库的并发控制
+    2.数据库的恢复
+    3.数据完整性
+    4.数据安全性
+</code></pre>">1.采用数据模型表示复杂的数据结构
+2.有较高的数据独立性
+3.数据库系统为用户提供了非常方便的用户接口
+4.数据库系统提供了数据控制功能
+    1.数据库的并发控制
+    2.数据库的恢复
+    3.数据完整性
+    4.数据安全性
+</code></pre><p><strong>4.分布式数据库阶段</strong><br>分布式数据库通常使用较小的计算机系统，每台计算机课单独放在一个地方，每台计算机中都有DBMS的完整副本，并具有自己的局部数据库，位于不同地点的许多计算机通过网络互相连接，共同组成一个完整的、全局的大型数据库。</p><pre><code data-origin="<pre><code>优点；
+1.降低数据传送代价-因为访问基本都是访问局部数据库，而不针对其他局部数据库
+2.提高可靠性-网络故障时，只影响当前局部数据库，不影响其他局部数据库
+3.便于系统扩充-增加新的局部数据库比较方便
+缺点：
+同时调配在几个位置的的活动，事务管理的性能可能比中心数据库花费更高，甚至抵消许多其他优点。
+</code></pre>">优点；
+1.降低数据传送代价-因为访问基本都是访问局部数据库，而不针对其他局部数据库
+2.提高可靠性-网络故障时，只影响当前局部数据库，不影响其他局部数据库
+3.便于系统扩充-增加新的局部数据库比较方便
+缺点：
+同时调配在几个位置的的活动，事务管理的性能可能比中心数据库花费更高，甚至抵消许多其他优点。
+</code></pre><h3 id="2、数据库、数据库管理系统、数据库应用系统、数据库模型的概念"><a name="2、数据库、数据库管理系统、数据库应用系统、数据库模型的概念" href="#2、数据库、数据库管理系统、数据库应用系统、数据库模型的概念"></a>2、数据库、数据库管理系统、数据库应用系统、数据库模型的概念</h3><h4 id="（1）数据库："><a name="（1）数据库：" href="#（1）数据库："></a>（1）数据库：</h4><p>一个长期存储在计算机内的、有组织的、可共享的、统一管理的数据集合。</p><h4 id="（2）数据库系统的特点："><a name="（2）数据库系统的特点：" href="#（2）数据库系统的特点："></a>（2）数据库系统的特点：</h4><pre><code data-origin="<pre><code>1.数据结构化
+2.数据共享
+3.可控冗余度
+4.有较高的数据独立性
+5.统一的管理和控制
+6.数据库管理系统作为用户与数据库之间的接口
+7.对数据的操作不一定以记录为单位，也可以以数据项为单位，增加了系统灵活性。
+</code></pre>">1.数据结构化
+2.数据共享
+3.可控冗余度
+4.有较高的数据独立性
+5.统一的管理和控制
+6.数据库管理系统作为用户与数据库之间的接口
+7.对数据的操作不一定以记录为单位，也可以以数据项为单位，增加了系统灵活性。
+</code></pre><h4 id="（3）数据库管理系统："><a name="（3）数据库管理系统：" href="#（3）数据库管理系统："></a>（3）数据库管理系统：</h4><p>数据库管理系统是用户用来创建和管理数据库的软件系统。<br>数据库管理系统的功能：</p><pre><code data-origin="<pre><code>1.数据定义
+    DBMS提供数据定义语言DDL（data define language）
+    定义数据的模式、外模式和内模式三级模式结构
+    定义模式/内模式 和 外模式/模式 二级映像
+    定义有关的约束条件
+2.数据操纵
+    DBMS提供数据操纵语言DML（data manipulation language）
+    实现对数据库的 增、删、改、查等基本操作
+3.数据库运行管理
+    1.数据的安全性控制
+    2.数据的完整性控制
+    3.多用户环境下的并发控制
+    4.数据库的恢复
+4.数据库的建立和维护功能
+    1.数据库初始数据的装入
+    2.数据库的转储、恢复、重组织
+    3.系统性能监视、分析
+</code></pre>">1.数据定义
+    DBMS提供数据定义语言DDL（data define language）
+    定义数据的模式、外模式和内模式三级模式结构
+    定义模式/内模式 和 外模式/模式 二级映像
+    定义有关的约束条件
+2.数据操纵
+    DBMS提供数据操纵语言DML（data manipulation language）
+    实现对数据库的 增、删、改、查等基本操作
+3.数据库运行管理
+    1.数据的安全性控制
+    2.数据的完整性控制
+    3.多用户环境下的并发控制
+    4.数据库的恢复
+4.数据库的建立和维护功能
+    1.数据库初始数据的装入
+    2.数据库的转储、恢复、重组织
+    3.系统性能监视、分析
+</code></pre><h4 id="（4）数据库应用系统"><a name="（4）数据库应用系统" href="#（4）数据库应用系统"></a>（4）数据库应用系统</h4><p>数据库应用系统：指在计算机环境下引进的引进数据库技术后构成的整个系统。</p><pre><code data-origin="<pre><code>完整的数据库系统包括：
+数据库
+数据库管理系统
+数据库用户（包括数据库管理员）
+支持数据库运行的各种计算机软件、硬件
+</code></pre>">完整的数据库系统包括：
+数据库
+数据库管理系统
+数据库用户（包括数据库管理员）
+支持数据库运行的各种计算机软件、硬件
+</code></pre><h4 id="（5）数据库的体系结构"><a name="（5）数据库的体系结构" href="#（5）数据库的体系结构"></a>（5）数据库的体系结构</h4><p>数据库的体系结构分为三级：外部级、概念级和内部级，这个结构称为数据库的体系结构，有时也称为三级体系结构或数据抽象的三个级别。</p><pre><code data-origin="<pre><code>外部级-外模式-用户视图-一个数据库可以有多个子模式
+概念级-模式-整体逻辑视图-一个数据库只有一个模式
+内部级-内模式-数据库的物理模式-一个数据库只有一个内模式
+</code></pre>">外部级-外模式-用户视图-一个数据库可以有多个子模式
+概念级-模式-整体逻辑视图-一个数据库只有一个模式
+内部级-内模式-数据库的物理模式-一个数据库只有一个内模式
+</code></pre><p>三级结构之间差别很大，为了实现抽象级别的联系和转换，DBMS在三个级别之间提供两个层次的映射：</p><pre><code data-origin="<pre><code>1.外模式/模式：实现数据库的逻辑独立性-映像一般放在外模式当中
+2.模式/内模式：实现数据库物理独立性-映像一般放在内模式当中
+</code></pre>">1.外模式/模式：实现数据库的逻辑独立性-映像一般放在外模式当中
+2.模式/内模式：实现数据库物理独立性-映像一般放在内模式当中
+</code></pre><p>由于数据库系统采用三级模式结构，因此系统具有数据独立性特点。数据独立性是指应用程序和数据库的数据结构之间互相独立，不受影响。</p><pre><code data-origin="<pre><code>1.物理数据独立性（物理独立性）-例如：对数据库内模式修改，即数据库的物理结构变化-修改模式/内模式映像-概念模式尽可能不变，对外模式和应用程序的影响更小。
+2.逻辑数据独立性（逻辑独立性）-例如：对数据库的概念模式修改，如增加记录类型、数据项-修改外模式/模式映像-外模式和应用程序尽可能保持不变。
+</code></pre>">1.物理数据独立性（物理独立性）-例如：对数据库内模式修改，即数据库的物理结构变化-修改模式/内模式映像-概念模式尽可能不变，对外模式和应用程序的影响更小。
+2.逻辑数据独立性（逻辑独立性）-例如：对数据库的概念模式修改，如增加记录类型、数据项-修改外模式/模式映像-外模式和应用程序尽可能保持不变。
+</code></pre><h4 id="（6）数据模型"><a name="（6）数据模型" href="#（6）数据模型"></a>（6）数据模型</h4><p>对现实世界事务特征的模拟和抽象就是这个事务的模型<br>模型满足以下要求：</p><pre><code data-origin="<pre><code>1.真是反应现实世界
+2.容易被人理解
+3.便于在计算机上实现
+</code></pre>">1.真是反应现实世界
+2.容易被人理解
+3.便于在计算机上实现
+</code></pre><p>人们对于现实世界抽象和建模的过程</p><pre><code data-origin="<pre><code>现实世界：
+有具体事物，经过抽象认识到达↓
+信息世界：
+&amp;lt;概念模型&amp;gt;-按用户观点对现实世界建模
+↑可以转换为↓
+机器世界：
+&amp;lt;逻辑数据模型&amp;gt;-描述数据库的整体结构
+    逻辑模型由数据结构、数据操作、数据完整性约束三部分组成。
+    由层次模型、网状模型、关系模型和面向对象模型等几种类型。
+&amp;lt;物理数据模型&amp;gt;-描述数据的存储结构和存储方法
+</code></pre>">现实世界：
+有具体事物，经过抽象认识到达↓
+信息世界：
+&lt;概念模型&gt;-按用户观点对现实世界建模
+↑可以转换为↓
+机器世界：
+&lt;逻辑数据模型&gt;-描述数据库的整体结构
+    逻辑模型由数据结构、数据操作、数据完整性约束三部分组成。
+    由层次模型、网状模型、关系模型和面向对象模型等几种类型。
+&lt;物理数据模型&gt;-描述数据的存储结构和存储方法
+</code></pre><h3 id="3、关系数据库和sql语言"><a name="3、关系数据库和sql语言" href="#3、关系数据库和sql语言"></a>3、关系数据库和SQL语言</h3><h4 id="（1）关系模型与关系数据库"><a name="（1）关系模型与关系数据库" href="#（1）关系模型与关系数据库"></a>（1）关系模型与关系数据库</h4><p>关系数据库是当今事务处理型信息系统中最常用也是最有效的一种数据库。<br>关系数据库采用关系数据模型。<br>关系数据模型-简称：关系模型，由三部分组成：</p><pre><code data-origin="<pre><code>1.数据结构
+2.关系操作
+3.关系完整性
+</code></pre>">1.数据结构
+2.关系操作
+3.关系完整性
+</code></pre><h5 id="关系"><a name="关系" href="#关系"></a>&lt;1&gt;关系</h5><p>关系的直接解释：二维表<br>关系模型中涉及的基本概念：</p><pre><code data-origin="<pre><code>1.关系-一个关系对应一张二维表
+2.元组-也称记录，表格中的一行。
+3.属性-也称字段，表格中的一列。
+4.主码（Primary Key）-表中能够唯一地标识一行的、最少的一个或一组属性称为主码。
+例如：id或学生的学号（学号是唯一，姓名可能重复，id在access数据库中是自动赋予的序列号，从1开始，自动排列。这里id也可以作为主码，称为“候选码”。
+5.外码（Foreign Key）-在关系数据库中，为了实现表与表之间的联系，将一个表的主码作为数据之间联系的纽带放到另一个表中，这些在另一个表中起到联系作用的属性称为外码。
+6.域（Domain）-属性的取值范围
+7.关系模式-对关系的描述，一般表示为：关系名
+注意：一定不要在主码下添加下划线。
+</code></pre>">1.关系-一个关系对应一张二维表
+2.元组-也称记录，表格中的一行。
+3.属性-也称字段，表格中的一列。
+4.主码（Primary Key）-表中能够唯一地标识一行的、最少的一个或一组属性称为主码。
+例如：id或学生的学号（学号是唯一，姓名可能重复，id在access数据库中是自动赋予的序列号，从1开始，自动排列。这里id也可以作为主码，称为“候选码”。
+5.外码（Foreign Key）-在关系数据库中，为了实现表与表之间的联系，将一个表的主码作为数据之间联系的纽带放到另一个表中，这些在另一个表中起到联系作用的属性称为外码。
+6.域（Domain）-属性的取值范围
+7.关系模式-对关系的描述，一般表示为：关系名
+注意：一定不要在主码下添加下划线。
+</code></pre><h5 id="关系必须满足的性质"><a name="关系必须满足的性质" href="#关系必须满足的性质"></a>&lt;2&gt;关系必须满足的性质</h5><p>1.关系中每个元组（记录）的分量必须是原子的，即表的每一列都是不可再分的。<br>2.表中每一列的值只能取自同一个域<br>3.表中列的次序可以任意交换<br>4.表中行的次序可以任意交换<br>5.表中不允许出现完全相同的两行</p><h5 id="关系模型中的三类完整性约束规则"><a name="关系模型中的三类完整性约束规则" href="#关系模型中的三类完整性约束规则"></a>&lt;3&gt;关系模型中的三类完整性约束规则</h5><p>1.实体完整性约束规则-指关系中的主键不允许取空值。（因为关系中的每一条记录都代表一个实体，任何实体都是可标识的，如果存在主键值为空，就意味着存在不可标识的实体。）<br>2.引用完整性约束规则-也称参照完整性规则，指不能引用不存在的记录。（不同关系之间的联系是通过外键实现的，关系通过外键引用时，它必须能再引用的关系找到这个记录，否则没办法引用）<br>3.用户定义的完整性约束规则-指对关系模式中的各个数据的数据类型、长度、取值范围等的约束，由用户通过关系DBMS提供的数据语言进行统一控制。</p><p>关系数据库由两大类：<br>基于PC的数据库：Microsoft access、visual foxpro<br>大型数据库：Microsoft SQL Server、Oracle、Sybase等</p><h4 id="（2）关系运算"><a name="（2）关系运算" href="#（2）关系运算"></a>（2）关系运算</h4><p>关系模型时以关系代数为理论基础的。<br>关系代数是由一组以关系作为运算对象的特定的运算所组成的。<br>用户通过这组运算，对一个或多个关系不断进行“组合”与“分割”从而得到所需要的数据。</p><h5 id="传统的集合运算"><a name="传统的集合运算" href="#传统的集合运算"></a>&lt;1&gt;传统的集合运算</h5><p>传统的集合运算包括并、交、差，用来实现增删改查等操作。<br>并-由属于a或属于b或同时属于a、b的元组构成的集合<br>交-由同时属于a和b的元组构成的集合<br>差-由属于a但不属于b的元组构成的集合</p><h5 id="专门的关系运算"><a name="专门的关系运算" href="#专门的关系运算"></a>&lt;2&gt;专门的关系运算</h5><p>专门的运算关系包括投影、选择、连接，用来实现数据查询。<br>选择：按给定条件从关系中挑选满足条件的元组组成的集合<br>投影：从关系中挑选出指定的属性组成的新关系<br>连接：两个关系，至少由一个相同的属性名，按给定条件，把满足条件的两个关系的所有元组，按一切可能拼接后形成的新关系。</p><h4 id="（3）sql语言"><a name="（3）sql语言" href="#（3）sql语言"></a>（3）SQL语言</h4><p>结构化查询语言（structured query language，SQL）是操作和检索关系数据库的事实上的标准语言。SQL由四部分组成：<br>1.数据定义：SQL DDL-定义基本表、视图和索引。<br>2.数据操纵：SQL DML-包括数据查询和数据更新（增、删、改）<br>3.数据控制：SQL DCL-包括对基本表和视图的授权、完整性规则的描述，事务控制等。<br>4.嵌入式SQL的使用规定。</p><p>SQL语言的主要特点是：<br>1.类似与英语的自然语言，简介易用。<br>2.是一种非过程语言，即用户只需要提出“做什么“，不必关心”如何做”，也不必了解数据的存取路径，只要知名所需的数据即可。<br>3.是一种面向集合的语言，每个命令的操作对象是一个或多个关系，结果也是一个关系。<br>4.即使自含式语言，又是嵌入式语言。可独立使用，也可嵌入到宿主语言中<br>5.集数据查询、数据定义、数据操纵、数据控制等功能为一体。</p><p>自含式语言：可以独立使用交互命令，适用于终端用户、应用程序员和DBA。<br>嵌入式语言：嵌入再高级语言（如：c语言）中使用，供程序员开发程序使用。</p><h3 id="4、数据库设计的原则和步骤"><a name="4、数据库设计的原则和步骤" href="#4、数据库设计的原则和步骤"></a>4、数据库设计的原则和步骤</h3><p>数据库设计是指在特定的DBMS环境下开发数据库应用系统。<br>数据库设计包括两个方面：<br>1.结构特性设计-指数据库总体概念的设计<br>2.行为特性设计-指数据库用户的业务活动</p><h4 id="（1）数据库设计的基本原则："><a name="（1）数据库设计的基本原则：" href="#（1）数据库设计的基本原则："></a>（1）数据库设计的基本原则：</h4><p>1.简单性-即所创建的数据结构尽可能直观，并且使用户易于理解。因为数据结构越简单，越容易维护。<br>2.非冗余性-即在数据库中没有重复的属性、记录和文件。因为数据冗余会产生数据不一致性，且浪费存储空间。非冗余性是一个很高的目标，要完全消除冗余几乎是不现实的。</p><h4 id="（2）数据库设计的步骤"><a name="（2）数据库设计的步骤" href="#（2）数据库设计的步骤"></a>（2）数据库设计的步骤</h4><p>以数据库为基础的信息系统通常称为数据库应用系统，一般具有采集、组织、加工、抽取和传播等功能。数据库应用系统的开发是一项软件工程，但又有自己的特点，所以称为数据库工程。<br>把数据库应用系统从开始规划、分析、设计、实现、投入运行后的维护到最后为新的系统所取代而停止使用的整个周期称为数据库系统的生存期。<br>生存期分为如下几个阶段：<br>1.规划阶段——进行必要性及可行性分析，确定在组织中和信息系统中的地位，以及各个数据库之间的关系。<br>2.需求分析阶段——从数据库设计的角度出发，对现实世界要处理的对象（组织、部门、企业等）进行详细调查，在了解原系统的概况，确定新系统功能的过程中，收集支持系统目标的基础数据及其处理<br>3.概念设计阶段——把用户大的信息要求统一到一个整体逻辑结构中。概念结构表达用户的要求。且独立于支持数据库的DBMS和硬件结构。通常利用E-R模型进行概念设计。<br>4.逻辑设计阶段——把概念设计阶段设计好的基于E-R模型转换为与选用的具体机器上的DBMS所支持的数据模型相符合的逻辑结构，然后进行规范化，使之符合一定的范式要求。<br>5.物理设计阶段——确定数据库的存储结构和数据的存放位置。<br>6.实现阶段——完成物理设计后，设计人员要用DBMS提供的数据定义语言和其他实用程序将数据库逻辑设计和物理设计结果严格描述出来，成为DBMS可以接受的源代码，再经过产生目标模式，然后就可以组织数据入库了。<br>7.运行和维护阶段——主要是收集和记录系统实际运行的数据。数据库运行的记录来提高用户要求的有效性信息，用来评价数据库系统的性能，更进一步用于对系统的修正。再运行中，必须保持数据库的完整性，必须有效地处理数据故障和进行数据库恢复。</p><h2 id="二、access2010数据库的基本知识（领会）"><a name="二、access2010数据库的基本知识（领会）" href="#二、access2010数据库的基本知识（领会）"></a>二、access2010数据库的基本知识（领会）</h2><p>access是一个功能强大而且易于使用的桌面型关系数据库管理系统。</p><h3 id="常用功能"><a name="常用功能" href="#常用功能"></a>常用功能</h3><p>access提供的应用程序生成器：<br>1.表生成器<br>2.查询生成器<br>3.宏生成器<br>4.报表设计器</p><p>access提供的向导：<br>1.库向导<br>2.表向导<br>3.查询向导<br>4.窗体向导<br>5.报表向导</p><h3 id="基本数据类型"><a name="基本数据类型" href="#基本数据类型"></a>基本数据类型</h3><p>1.文本——文字或文字和数字的组合。允许保存最大255个字符或数字，access默认50字符（字段大小可以控制调节），系统只保存输入到字段中的字符，不保存文本字段中未用位置上的空字符。<br>2.备注——用来存放较长的文本或数字，允许字段能够存储长达64000个字符，但不能排序和索引。虽然可以搜索，但却不如再有索引的文本字段中搜索得快。<br>3.数字——用于需要进行算数计算的数据，可以使用“字段大小”属性来设定包含的数值的大小。任何指定为数字数据类型的字型可以设置成：字节、整型、长整型、单精度数、双精度数、同步复制ID和小数其中类型。<br>4.货币——数字类型的特殊类型，等价于具有双精度属性的数字字段类型。不需要输入货币符号和千位符（自动补充并添加两位小数），精度小数点左15位右4位。<br>5.日期/时间——用来存储日期和时间。每个日期/时间字段需要8B空间存储。格式：mm/dd/yyyy[:mm[:ss]][A|p]<br>6.是/否——布尔值<br>7.OLE对象——字段允许单独的“链接”或“嵌入”OLE对象。添加数据到OLE对象字段时，可以链接或嵌入access表中的OLE对象是指在其他使用OLE协议程序创建的对象，例如：word、excel、图像、声音或其他二进制数据。OLE对象字段最大可为1GB，它主要受磁盘空间限制。<br>8.超链接——这个字段主要是用来保存超链接的，包含作为超链接地址的文本或以文本形式储存的字符与数字的组合。链接最多可包含三个部分：1、字段与控件中显示的文本；2、文件或页面的路径；3、文件或页面中的地址。在这个字段中添加超链接地址最简单的方式就是在插入菜单中点击超链接命令。<br>9.附件——任何受支持的类型，access2010创建ACCDB格式的文件是一种新的类型，它可以以图像、电子表格、文档、图标等各种文件附加到数据库记录中。</p><h3 id="运算符和表达式"><a name="运算符和表达式" href="#运算符和表达式"></a>运算符和表达式</h3><h5 id="算数运算符"><a name="算数运算符" href="#算数运算符"></a>算数运算符</h5><p><code>+、-、*、/、**、^</code><br>主要用于加工数值型数据，使用规则与数学中的概念相似。</p><h5 id="字符运算符"><a name="字符运算符" href="#字符运算符"></a>字符运算符</h5><p><code>+、-、$</code><br><code>+</code>运算：对两个字符串进行连接<br><code>-</code>运算：将前面字符串尾部的空格移动到后面字符串的后面成为一个字符串，因此成为”紧缩连接符“<br><code>$</code>运算：是比较运算，即比较前面字符串是否包含在后面字符串中。</p><h5 id="关系运算符"><a name="关系运算符" href="#关系运算符"></a>关系运算符</h5><p><code>&lt;、&gt;、&lt;=、&gt;=、=、&lt;&gt;、==</code><br>对两个同类型数据进行比较的运算符，比较结果为逻辑型数据。</p><h5 id="逻辑运算符"><a name="逻辑运算符" href="#逻辑运算符"></a>逻辑运算符</h5><p><code>.AND.、.OR.、.NOT.</code><br>与或非运算，结果仍为逻辑型函数。</p><h5 id="like运算符"><a name="like运算符" href="#like运算符"></a>LIKE运算符</h5><p>用于字符串的模糊匹配<br>可以查找与所指定的模式相匹配的字段值。对于模式，可以指定完整的值，也可以使用通配符来查找某个范围内的值。<br>在表达式中，可以比较字段值与字符串。在参数查询中，可以提示用户输入要搜索的模式。</p><h5 id="通配符"><a name="通配符" href="#通配符"></a>通配符</h5><p>可以代表任意字符的字符。access提供多种通配符。通配符与like结合，可以查询各种情况下满足条件的记录。</p><table>
+<thead>
+<tr>
+<th style="text-align:center">模式中的字符</th>
+<th style="text-align:center">表达式中的匹配</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">？或 _</td>
+<td style="text-align:center">任意单个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">*或%</td>
+<td style="text-align:center">零个或多个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">#</td>
+<td style="text-align:center">任意一个数字0-9</td>
+</tr>
+<tr>
+<td style="text-align:center">[字符列表]</td>
+<td style="text-align:center">字符列表中的任意单字符</td>
+</tr>
+<tr>
+<td style="text-align:center">[!字符列表]</td>
+<td style="text-align:center">不在字符列表中的任意单字符</td>
+</tr>
+</tbody>
+</table><h2 id="三、access2010数据库管理系统的基本功能（简单应用）"><a name="三、access2010数据库管理系统的基本功能（简单应用）" href="#三、access2010数据库管理系统的基本功能（简单应用）"></a>三、access2010数据库管理系统的基本功能（简单应用）</h2><h4 id="利用数据库管理数据的过程"><a name="利用数据库管理数据的过程" href="#利用数据库管理数据的过程"></a>利用数据库管理数据的过程</h4><pre><code data-origin="<pre><code>1.设计数据库（确定数据库包含那些表，每张表的结构（字段名、数据类型、数据长度、取值约束等），表之间的关联关系。）
+2.建立数据库
+3.在数据库中建立表、索引、视图
+4.对数据库中的数据进行各种操作，包括插入、修改、删除、查询、统计、分析等。
+5.数据库维护
+</code></pre>">1.设计数据库（确定数据库包含那些表，每张表的结构（字段名、数据类型、数据长度、取值约束等），表之间的关联关系。）
+2.建立数据库
+3.在数据库中建立表、索引、视图
+4.对数据库中的数据进行各种操作，包括插入、修改、删除、查询、统计、分析等。
+5.数据库维护
+</code></pre><h3 id="数据库和表的建立"><a name="数据库和表的建立" href="#数据库和表的建立"></a>数据库和表的建立</h3><p>建立数据库：<br>在access窗口上，选择”文件”选项卡，点击“新建”按钮，在“可用模板”中选择“空白数据库”，在窗口右边的“文件名”编辑框中输入数据库的文件名，单机“确定”按钮，即可创建一个数据库。</p><p>建立数据表：<br>如果把数据比作一个容纳数据的容器（实际上，数据库就是磁盘上的一个存储空间），那么表就是存放数据的搁架，需要根据要存放的数据的多少，来决定搁架的长短高低，称为“表结构”。在access中称为表的字段。<br>确定好一张表的结构，即包含哪些字段，每个字段的字段名、数据类型、字段的各种属性后，就可以建立这张表了。</p><h3 id="表之间关联的建立"><a name="表之间关联的建立" href="#表之间关联的建立"></a>表之间关联的建立</h3><p>建立表之间关联的步骤是：</p><pre><code data-origin="<pre><code>1.打开数据库
+2.启动关系工具
+3.添加关系表
+4.查看关系图
+5.创建表关系
+</code></pre>">1.打开数据库
+2.启动关系工具
+3.添加关系表
+4.查看关系图
+5.创建表关系
+</code></pre><h3 id="索引和视图的建立"><a name="索引和视图的建立" href="#索引和视图的建立"></a>索引和视图的建立</h3><h4 id="索引"><a name="索引" href="#索引"></a>索引</h4><p>索引是一句数据表中某个关键字或关键字表达式值的顺序，使数据表中的记录有序排列的一种技术。<br>索引不改变原表中记录的物理顺序，而是按某个索引关键字建立一个索引表，在索引表中按索引关键字顺序排列，称这种顺序为记录的逻辑顺序。索引表只包含两项：<br>1.索引关键字的值<br>2.预期对应的记录号，即记录指针。</p><h4 id="视图"><a name="视图" href="#视图"></a>视图</h4><p>是一种特殊类型的数据表，它往往由一个或多个表（或视图）中的部分字段或部分记录组成。<br>建立视图的目的：</p><pre><code data-origin="<pre><code>1.保障数据的安全性和完整性
+2.使用方便
+3.简化对数据库的操作管理
+</code></pre>">1.保障数据的安全性和完整性
+2.使用方便
+3.简化对数据库的操作管理
+</code></pre><p>access本身没有视图的概念而是称之为查询，查询的结果是一个视图。利用设计中的查询菜单，可以创建视图。<br>建立视图的步骤：</p><pre><code data-origin="<pre><code>1.选择查询的记录源
+2.从记录源中选择在查询中查看的字段
+3.添加排序、筛选或其他选择条件
+4.运行查询，查看执行结果
+</code></pre>">1.选择查询的记录源
+2.从记录源中选择在查询中查看的字段
+3.添加排序、筛选或其他选择条件
+4.运行查询，查看执行结果
+</code></pre><h2 id="四、结构化查询语言sql基本知识（领会）"><a name="四、结构化查询语言sql基本知识（领会）" href="#四、结构化查询语言sql基本知识（领会）"></a>四、结构化查询语言SQL基本知识（领会）</h2><h3 id="结构化查询语言sql的定义、功能和特点"><a name="结构化查询语言sql的定义、功能和特点" href="#结构化查询语言sql的定义、功能和特点"></a>结构化查询语言SQL的定义、功能和特点</h3><h4 id="定义"><a name="定义" href="#定义"></a>定义</h4><p>结构化查询语言（SQL）是一种标准关系数据库语言，集数据定义、数据操纵、数据查询、数据控制功能于一体，其核心功能是查询。</p><h4 id="功能"><a name="功能" href="#功能"></a>功能</h4><pre><code data-origin="<pre><code>SELECT
+CREATE
+DROP
+ALTER
+INSERT
+DELETE
+UPDATE
+GRANT
+REVOKE
+</code></pre>">SELECT
+CREATE
+DROP
+ALTER
+INSERT
+DELETE
+UPDATE
+GRANT
+REVOKE
+</code></pre><h4 id="特点"><a name="特点" href="#特点"></a>特点</h4><p>1.非过程化语言<br>2.功能强大，操作简单<br>3.核心功能只有九条命令</p><h4 id="sql语言的使用有两种方式："><a name="sql语言的使用有两种方式：" href="#sql语言的使用有两种方式："></a>SQL语言的使用有两种方式：</h4><p>1.交互方式：在命令窗口中使用，每输入一条语句，就立即执行并给出结果。<br>2.嵌入其他语言程序命令中，以程序方式使用。</p><h3 id="sql核心命令功能和用法"><a name="sql核心命令功能和用法" href="#sql核心命令功能和用法"></a>SQL核心命令功能和用法</h3><h4 id="数据查询"><a name="数据查询" href="#数据查询"></a>数据查询</h4><p>一个SELECT语句包含要从数据库中获得的一组数据的完整描述，其中包括：<br>1.那些表包含数据<br>2.不同数据源中的数据怎样关联<br>3.那些字段或计算将产生数据<br>4.数据必须符合那些条件才能被选中<br>5.是否以及怎样对结果进行排序</p><h4 id="数据定义"><a name="数据定义" href="#数据定义"></a>数据定义</h4><p>数据定义语句用于定义数据库表、视图和索引</p><h5 id="创建数据库表"><a name="创建数据库表" href="#创建数据库表"></a>创建数据库表</h5><p>语句为：<br><code>CREATE TABLE &lt;表名&gt;（&lt;字段名&gt; &lt;类型&gt;(&lt;长度[,小数位数&gt;])，···） [NULL] [NOT NULL] [DEFAULT字段初值] [PRIMART KEY] [UNIQUE] [CHECK(表的有效性规则)] [ERROR“错误信息”]</code></p><h5 id="修改表结构"><a name="修改表结构" href="#修改表结构"></a>修改表结构</h5><p>语句为：<br><code>ALTER TABLE &lt;表名&gt; ADD/ALTER [COLUMN] &lt;字段名&gt;&lt;类型&gt;（&lt;长度[，小数位数&gt;]) [NULL] [NOT NULL]</code></p><h5 id="删除表"><a name="删除表" href="#删除表"></a>删除表</h5><p>语句为：<br>DROP TABLE &lt;表名&gt;</p><h4 id="数据操纵"><a name="数据操纵" href="#数据操纵"></a>数据操纵</h4><p>数据操纵用于数据的增加、修改和删除，主要包括三条语句：INSERT（插入）DELETE（删除）UPDATE（修改）<br>1.插入：用于在表中插入一条新记录的SQL语句是INSERT，其语法规则为：<br><code>INSERT INTO &lt;表名&gt;(&lt;字段名&gt;&lt;类型&gt;(长度[,小数位数&gt;]),···)VALUES(&lt;表达式1&gt;,···)</code></p><p>2.更新<br>语句为：<code>UPDATE[库名！]&lt;表名&gt;SET字段名=表达式[,···][WHERE条件]</code></p><p>3.删除<br>语句为：<code>DELETE FROM&lt;表名&gt;[WHERE&lt;条件&gt;]</code></p><h3 id="sql常用子句的意义和使用方法"><a name="sql常用子句的意义和使用方法" href="#sql常用子句的意义和使用方法"></a>SQL常用子句的意义和使用方法</h3><p>SQL语句和句子一样有子句。每个子句执行一个SQL语句的功能。某些子句在SELECT语句中是必须的。如下表：<br>最常见按的SQL子句：</p><table>
+<thead>
+<tr>
+<th style="text-align:center">SQL子句</th>
+<th style="text-align:center">执行的操作</th>
+<th style="text-align:center">是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SELECT</td>
+<td style="text-align:center">列出含有关注的数据的字段</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">FROM</td>
+<td style="text-align:center">列出的表中含有SELECT子句中列出的字段</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">WHERE</td>
+<td style="text-align:center">指定要包括在结果内的每条记录必须符合的字段条件</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">ORDER BY</td>
+<td style="text-align:center">指定怎样对结果进行排序</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">GROUP BY</td>
+<td style="text-align:center">在包含聚合函数的SQL语句中，列出围在SELECT子句中汇总的字段</td>
+<td style="text-align:center">仅在存在这类字段时才是必须的</td>
+</tr>
+<tr>
+<td style="text-align:center">HAVING</td>
+<td style="text-align:center">在包含聚合函数的SQL语句中，指定应用于在SELECT语句中汇总的字段的条件</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table><h4 id="1.select子句"><a name="1.select子句" href="#1.select子句"></a>1.SELECT子句</h4><p>SELECT子句列出了包含要使用的数据的字段</p><p>在SELECT子句中，可以用方括号把字段名称括起来。<br>如果名称中没有包含空格或特殊字符（如标点符号），则方括号是可选的。<br>如果名称中确实包含空格或特殊字符，则必须使用方括号。</p><p>如果SQL语句中有两个或多个同名字段，则必须将灭个字段的数据源名称添加到SELECT子句的字段名称中。用于数据源的名称与在FROM子句中使用的名称相同。</p><p>要包括数据源中的所有字段时，可以在SELECT子句中逐一列出所有字段，也可以使用星号通配符（*）。</p><p>可以在SQL语句中将星号通配符用于一个或多个数据源。如果使用星号通配符并且有多个数据源，则必须将数据源名称与星号通配符一同包括，以便Access可以确定要包括哪个数据源中的所有字段。</p><p>如果字段的值有重复的数据，但只想看到不同的值，则可以在SELECT子句中使用DISTINCT关键字。</p><h4 id="2.from子句"><a name="2.from子句" href="#2.from子句"></a>2.FROM子句</h4><p>在SELECT语句中，FROM子句指定包含SELECT子句将要使用的数据的表或查询。</p><h4 id="3.where子句"><a name="3.where子句" href="#3.where子句"></a>3.WHERE子句</h4><p>使用SELECT语句的WHERE子句中的查询条件（条件：所指定的限制查询或筛选的结果集中包含那些记录的条件）来限制查询中返回的记录数。查询条件类似于公式，它是一个可能由字段引用、运算符及常量组成的字符串。</p><p>如果将字段用于聚合函数，则不能在WHERE子句中为该字段指定条件。相反，可以使用HAVING子句为聚合字段指定条件。</p>
+
+<footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>
+

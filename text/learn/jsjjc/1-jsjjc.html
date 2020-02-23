@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>第一章-计算机基础知识.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>div.oembedall-githubrepos{border:1px solid #DDD;border-radius:4px;list-style-type:none;margin:0 0 10px;padding:8px 10px 0;font:13.34px/1.4 helvetica,arial,freesans,clean,sans-serif;width:452px;background-color:#fff}div.oembedall-githubrepos .oembedall-body{background:-moz-linear-gradient(center top,#FAFAFA,#EFEFEF);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#EFEFEF));border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top:1px solid #EEE;margin-left:-10px;margin-top:8px;padding:5px 10px;width:100%}div.oembedall-githubrepos h3{font-size:14px;margin:0;padding-left:18px;white-space:nowrap}div.oembedall-githubrepos p.oembedall-description{color:#444;font-size:12px;margin:0 0 3px}div.oembedall-githubrepos p.oembedall-updated-at{color:#888;font-size:11px;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats{border:none;float:right;font-size:11px;font-weight:700;padding-left:15px;position:relative;z-index:5;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats li{border:none;color:#666;display:inline-block;list-style-type:none;margin:0!important}div.oembedall-githubrepos ul.oembedall-repo-stats li a{background-color:transparent;border:none;color:#666!important;background-position:5px -2px;background-repeat:no-repeat;border-left:1px solid #DDD;display:inline-block;height:21px;line-height:21px;padding:0 5px 0 23px}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a{border-left:medium none;margin-right:-3px}div.oembedall-githubrepos ul.oembedall-repo-stats li a:hover{background:5px -27px no-repeat #4183C4;color:#FFF!important;text-decoration:none}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a:hover{border-bottom-left-radius:3px;border-top-left-radius:3px}ul.oembedall-repo-stats li:last-child a:hover{border-bottom-right-radius:3px;border-top-right-radius:3px}span.oembedall-closehide{background-color:#aaa;border-radius:2px;cursor:pointer;margin-right:3px}div.oembedall-container{margin-top:5px;text-align:left}.oembedall-ljuser{font-weight:700}.oembedall-ljuser img{vertical-align:bottom;border:0;padding-right:1px}.oembedall-stoqembed{border-bottom:1px dotted #999;float:left;overflow:hidden;width:730px;line-height:1;background:#FFF;color:#000;font-family:Arial,Liberation Sans,DejaVu Sans,sans-serif;font-size:80%;text-align:left;margin:0;padding:0}.oembedall-stoqembed a{color:#07C;text-decoration:none;margin:0;padding:0}.oembedall-stoqembed a:hover{text-decoration:underline}.oembedall-stoqembed a:visited{color:#4A6B82}.oembedall-stoqembed h3{font-family:Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;font-size:130%;font-weight:700;margin:0;padding:0}.oembedall-stoqembed .oembedall-reputation-score{color:#444;font-size:120%;font-weight:700;margin-right:2px}.oembedall-stoqembed .oembedall-user-info{height:35px;width:185px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-gravatar32{float:left;height:32px;width:32px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-details{float:left;margin-left:5px;overflow:hidden;white-space:nowrap;width:145px}.oembedall-stoqembed .oembedall-question-hyperlink{font-weight:700}.oembedall-stoqembed .oembedall-stats{background:#EEE;margin:0 0 0 7px;padding:4px 7px 6px;width:58px}.oembedall-stoqembed .oembedall-statscontainer{float:left;margin-right:8px;width:86px}.oembedall-stoqembed .oembedall-votes{color:#555;padding:0 0 7px;text-align:center}.oembedall-stoqembed .oembedall-vote-count-post{font-size:240%;color:#808185;display:block;font-weight:700}.oembedall-stoqembed .oembedall-views{color:#999;padding-top:4px;text-align:center}.oembedall-stoqembed .oembedall-status{margin-top:-3px;padding:4px 0;text-align:center;background:#75845C;color:#FFF}.oembedall-stoqembed .oembedall-status strong{color:#FFF;display:block;font-size:140%}.oembedall-stoqembed .oembedall-summary{float:left;width:635px}.oembedall-stoqembed .oembedall-excerpt{line-height:1.2;margin:0;padding:0 0 5px}.oembedall-stoqembed .oembedall-tags{float:left;line-height:18px}.oembedall-stoqembed .oembedall-tags a:hover{text-decoration:none}.oembedall-stoqembed .oembedall-post-tag{background-color:#E0EAF1;border-bottom:1px solid #3E6D8E;border-right:1px solid #7F9FB6;color:#3E6D8E;font-size:90%;line-height:2.4;margin:2px 2px 2px 0;padding:3px 4px;text-decoration:none;white-space:nowrap}.oembedall-stoqembed .oembedall-post-tag:hover{background-color:#3E6D8E;border-bottom:1px solid #37607D;border-right:1px solid #37607D;color:#E0EAF1}.oembedall-stoqembed .oembedall-fr{float:right}.oembedall-stoqembed .oembedall-statsarrow{background-image:url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=3);background-repeat:no-repeat;overflow:hidden;background-position:0 -435px;float:right;height:13px;margin-top:12px;width:7px}.oembedall-facebook1{border:1px solid #1A3C6C;padding:0;font:13.34px/1.4 verdana;width:500px}.oembedall-facebook2{background-color:#627add}.oembedall-facebook2 a{color:#e8e8e8;text-decoration:none}.oembedall-facebookBody{background-color:#fff;vertical-align:top;padding:5px}.oembedall-facebookBody .contents{display:inline-block;width:100%}.oembedall-facebookBody div img{float:left;margin-right:5px}div.oembedall-lanyard{-webkit-box-shadow:none;-webkit-transition-delay:0s;-webkit-transition-duration:.4000000059604645s;-webkit-transition-property:width;-webkit-transition-timing-function:cubic-bezier(0.42,0,.58,1);background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;border-width:0;box-shadow:none;color:#112644;display:block;float:left;font-family:'Trebuchet MS',Trebuchet,sans-serif;font-size:16px;height:253px;line-height:19px;margin:0;max-width:none;min-height:0;outline:#112644 0;overflow-x:visible;overflow-y:visible;padding:0;position:relative;text-align:left;vertical-align:baseline;width:804px}div.oembedall-lanyard .tagline{font-size:1.5em}div.oembedall-lanyard .wrapper{overflow:hidden;clear:both}div.oembedall-lanyard .split{float:left;display:inline}div.oembedall-lanyard .prominent-place .flag:active,div.oembedall-lanyard .prominent-place .flag:focus,div.oembedall-lanyard .prominent-place .flag:hover,div.oembedall-lanyard .prominent-place .flag:link,div.oembedall-lanyard .prominent-place .flag:visited{float:left;display:block;width:48px;height:48px;position:relative;top:-5px;margin-right:10px}div.oembedall-lanyard .place-context{font-size:.889em}div.oembedall-lanyard .prominent-place .sub-place{display:block}div.oembedall-lanyard .prominent-place{font-size:1.125em;line-height:1.1em;font-weight:400}div.oembedall-lanyard .main-date{color:#8CB4E0;font-weight:700;line-height:1.1}div.oembedall-lanyard .first{width:48.57%;margin:0 0 0 2.857%}.mermaid .label{color:#333}.node circle,.node polygon,.node rect{fill:#cde498;stroke:#13540c;stroke-width:1px}.edgePath .path{stroke:green;stroke-width:1.5px}.cluster rect{fill:#cdffb2;rx:40;stroke:#6eaa49;stroke-width:1px}.cluster text{fill:#333}.actor{stroke:#13540c;fill:#cde498}text.actor{fill:#000;stroke:none}.actor-line{stroke:grey}.messageLine0{stroke-width:1.5;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#333}.messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#arrowhead{fill:#333}#crosshead path{fill:#333!important;stroke:#333!important}.messageText{fill:#333;stroke:none}.labelBox{stroke:#326932;fill:#cde498}.labelText,.loopText{fill:#000;stroke:none}.loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#326932}.note{stroke:#6eaa49;fill:#fff5ad}.noteText{fill:#000;stroke:none;font-family:'trebuchet ms',verdana,arial;font-size:14px}.section{stroke:none;opacity:.2}.section0,.section2{fill:#6eaa49}.section1,.section3{fill:#fff;opacity:.2}.sectionTitle0,.sectionTitle1,.sectionTitle2,.sectionTitle3{fill:#333}.sectionTitle{text-anchor:start;font-size:11px;text-height:14px}.grid .tick{stroke:lightgrey;opacity:.3;shape-rendering:crispEdges}.grid path{stroke-width:0}.today{fill:none;stroke:red;stroke-width:2px}.task{stroke-width:2}.taskText{text-anchor:middle;font-size:11px}.taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}.taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}.taskText0,.taskText1,.taskText2,.taskText3{fill:#fff}.task0,.task1,.task2,.task3{fill:#487e3a;stroke:#13540c}.taskTextOutside0,.taskTextOutside1,.taskTextOutside2,.taskTextOutside3{fill:#000}.active0,.active1,.active2,.active3{fill:#cde498;stroke:#13540c}.activeText0,.activeText1,.activeText2,.activeText3{fill:#000!important}.done0,.done1,.done2,.done3{stroke:grey;fill:lightgrey;stroke-width:2}.doneText0,.doneText1,.doneText2,.doneText3{fill:#000!important}.crit0,.crit1,.crit2,.crit3{stroke:#f88;fill:red;stroke-width:2}.activeCrit0,.activeCrit1,.activeCrit2,.activeCrit3{stroke:#f88;fill:#cde498;stroke-width:2}.doneCrit0,.doneCrit1,.doneCrit2,.doneCrit3{stroke:#f88;fill:lightgrey;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}.activeCritText0,.activeCritText1,.activeCritText2,.activeCritText3,.doneCritText0,.doneCritText1,.doneCritText2,.doneCritText3{fill:#000!important}.titleText{text-anchor:middle;font-size:18px;fill:#000}text{font-family:'trebuchet ms',verdana,arial;font-size:14px}html{height:100%}body{margin:0!important;padding:5px 20px 26px!important;background-color:#fff;font-family:"Lucida Grande","Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Lucida Sans Unicode",Helvetica,Arial,sans-serif;font-size:.9em;overflow-x:hidden;overflow-y:auto}br,h1,h2,h3,h4,h5,h6{clear:both}hr.page{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x;border:0;height:3px;padding:0}hr.underscore{border-top-style:dashed!important}body >:first-child{margin-top:0!important}img.plugin{box-shadow:0 1px 3px rgba(0,0,0,.1);border-radius:3px}iframe{border:0}figure{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}kbd{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-moz-box-shadow:1px 2px 2px #ddd;-webkit-box-shadow:1px 2px 2px #ddd;box-shadow:1px 2px 2px #ddd;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-o-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-webkit-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:linear-gradient(top,#eee,#f9f9f9,#eee);padding:1px 3px;font-family:inherit;font-size:.85em}.oembeded .oembed_photo{display:inline-block}img[data-echo]{margin:25px 0;width:100px;height:100px;background:url(../img/ajax.gif) center center no-repeat #fff}.spinner{display:inline-block;width:10px;height:10px;margin-bottom:-.1em;border:2px solid rgba(0,0,0,.5);border-top-color:transparent;border-radius:100%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.spinner:after{content:'';display:block;width:0;height:0;position:absolute;top:-6px;left:0;border:4px solid transparent;border-bottom-color:rgba(0,0,0,.5);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}p.toc{margin:0!important}p.toc ul{padding-left:10px}p.toc>ul{padding:10px;margin:0 10px;display:inline-block;border:1px solid #ededed;border-radius:5px}p.toc li,p.toc ul{list-style-type:none}p.toc li{width:100%;padding:0;overflow:hidden}p.toc li a::after{content:"."}p.toc li a:before{content:"• "}p.toc h5{text-transform:uppercase}p.toc .title{float:left;padding-right:3px}p.toc .number{margin:0;float:right;padding-left:3px;background:#fff;display:none}input.task-list-item{margin-left:-1.62em}.markdown{font-family:"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;padding:20px}.markdown a{text-decoration:none;vertical-align:baseline}.markdown a:hover{text-decoration:underline}.markdown h1{font-size:2.2em;font-weight:700;margin:1.5em 0 1em}.markdown h2{font-size:1.8em;font-weight:700;margin:1.275em 0 .85em}.markdown h3{font-size:1.6em;font-weight:700;margin:1.125em 0 .75em}.markdown h4{font-size:1.4em;font-weight:700;margin:.99em 0 .66em}.markdown h5{font-size:1.2em;font-weight:700;margin:.855em 0 .57em}.markdown h6{font-size:1em;font-weight:700;margin:.75em 0 .5em}.markdown h1+p,.markdown h1:first-child,.markdown h2+p,.markdown h2:first-child,.markdown h3+p,.markdown h3:first-child,.markdown h4+p,.markdown h4:first-child,.markdown h5+p,.markdown h5:first-child,.markdown h6+p,.markdown h6:first-child{margin-top:0}.markdown hr{border:1px solid #ccc}.markdown p{margin:1em 0;word-wrap:break-word}.markdown ol{list-style-type:decimal}.markdown li{display:list-item;line-height:1.4em}.markdown blockquote{margin:1em 20px}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown blockquote cite:before{content:'\2014 \00A0'}.markdown .code{border-radius:3px;word-wrap:break-word}.markdown pre{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;overflow:auto;padding:.5em}.markdown pre code{border:0;display:block}.markdown pre>code{font-family:Consolas,Inconsolata,Courier,monospace;font-weight:700;white-space:pre;margin:0}.markdown code{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;padding:0 5px;margin:0 2px}.markdown img{max-width:100%}.markdown mark{color:#000;background-color:#fcf8e3}.markdown table{padding:0;border-collapse:collapse;border-spacing:0;margin-bottom:16px}.markdown table tr td,.markdown table tr th{border:1px solid #ccc;margin:0;padding:6px 13px}.markdown table tr th{font-weight:700}.markdown table tr th>:first-child{margin-top:0}.markdown table tr th>:last-child{margin-bottom:0}.markdown table tr td>:first-child{margin-top:0}.markdown table tr td>:last-child{margin-bottom:0}@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);.haroopad{padding:20px;color:#222;font-size:15px;font-family:"Roboto Condensed",Tauri,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}.haroopad a{color:#3269a0}.haroopad a:hover{color:#4183c4}.haroopad h2{border-bottom:1px solid #e6e6e6}.haroopad h6{color:#777}.haroopad hr{border:1px solid #e6e6e6}.haroopad blockquote>code,.haroopad h1>code,.haroopad h2>code,.haroopad h3>code,.haroopad h4>code,.haroopad h5>code,.haroopad h6>code,.haroopad li>code,.haroopad p>code,.haroopad td>code{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:85%;background-color:rgba(0,0,0,.02);padding:.2em .5em;border:1px solid #efefef}.haroopad pre>code{font-size:1em;letter-spacing:-1px;font-weight:700}.haroopad blockquote{border-left:4px solid #e6e6e6;padding:0 15px;color:#777}.haroopad table{background-color:#fafafa}.haroopad table tr td,.haroopad table tr th{border:1px solid #e6e6e6}.haroopad table tr:nth-child(2n){background-color:#f2f2f2}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment,.hljs-doctype,.hljs-javadoc,.hljs-pi,.lisp .hljs-string{color:#93a1a1}.css .hljs-tag,.hljs-addition,.hljs-keyword,.hljs-request,.hljs-status,.hljs-winutils,.method,.nginx .hljs-title{color:#859900}.hljs-command,.hljs-dartdoc,.hljs-hexcolor,.hljs-link_url,.hljs-number,.hljs-phpdoc,.hljs-regexp,.hljs-rules .hljs-value,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#2aa198}.css .hljs-function,.hljs-built_in,.hljs-chunk,.hljs-decorator,.hljs-id,.hljs-identifier,.hljs-localvars,.hljs-title,.vhdl .hljs-literal{color:#268bd2}.hljs-attribute,.hljs-class .hljs-title,.hljs-constant,.hljs-link_reference,.hljs-parent,.hljs-type,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number{color:#b58900}.css .hljs-pseudo,.diff .hljs-change,.hljs-attr_selector,.hljs-cdata,.hljs-header,.hljs-pragma,.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-shebang,.hljs-special,.hljs-subst,.hljs-symbol,.hljs-symbol .hljs-string{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#eee8d5}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:2px;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:2px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:1em}.MathJax_MenuRadioCheck.RTL{right:1em;left:auto}.MathJax_MenuLabel{padding:2px 2em 4px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #CCC;margin:4px 1px 0}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:Highlight;color:HighlightText}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown haroopad">
+<h1 id="计算机基础知识"><a name="计算机基础知识" href="#计算机基础知识"></a>计算机基础知识</h1><h2 id="计算机的起源和发展历史（识记）"><a name="计算机的起源和发展历史（识记）" href="#计算机的起源和发展历史（识记）"></a>计算机的起源和发展历史（识记）</h2><h3 id="人类计算机工具从起源到现在所经历的三个阶段"><a name="人类计算机工具从起源到现在所经历的三个阶段" href="#人类计算机工具从起源到现在所经历的三个阶段"></a>人类计算机工具从起源到现在所经历的三个阶段</h3><p>1.手工计算阶段</p><pre><code data-origin="<pre><code>春秋时期的——算筹
+公元5、6世纪的——算盘
+17世纪的——计算尺（可以计算四则运算、三角函数）
+</code></pre>">春秋时期的——算筹
+公元5、6世纪的——算盘
+17世纪的——计算尺（可以计算四则运算、三角函数）
+</code></pre><p>2.机械计算阶段</p><pre><code data-origin="<pre><code>1642年-法国人-布莱兹·帕斯卡发明用齿轮计算的-机械加法器
+1666年-英国人-莫兰-发明可以进行加减运算的-机械计算器
+1673年-德国人-莱布尼兹-改进帕斯卡发明-增加乘除运算
+1822年-英国人-巴贝奇-提出整个计算过程自动化的概念，设计第一台通用自动时序控制机械师计算机-“巴贝奇差分机”
+巴贝奇差分机为现代计算机设计奠定了基础
+</code></pre>">1642年-法国人-布莱兹·帕斯卡发明用齿轮计算的-机械加法器
+1666年-英国人-莫兰-发明可以进行加减运算的-机械计算器
+1673年-德国人-莱布尼兹-改进帕斯卡发明-增加乘除运算
+1822年-英国人-巴贝奇-提出整个计算过程自动化的概念，设计第一台通用自动时序控制机械师计算机-“巴贝奇差分机”
+巴贝奇差分机为现代计算机设计奠定了基础
+</code></pre><p>3.电子计算阶段<br>↓↓↓</p><h3 id="人类第一台真正意义上的电子计算机eniac及冯·诺伊曼设计的程序存储计算机edsac"><a name="人类第一台真正意义上的电子计算机eniac及冯·诺伊曼设计的程序存储计算机edsac" href="#人类第一台真正意义上的电子计算机eniac及冯·诺伊曼设计的程序存储计算机edsac"></a>人类第一台真正意义上的电子计算机ENIAC及冯·诺伊曼设计的程序存储计算机EDSAC</h3><pre><code data-origin="<pre><code>1946年2月-美国宾夕法尼亚大学-第一台电子计算机-ENIAC-主要缺点：十进制（非二进制）表示和计算数据，而且只能通过手工设置开关和插头来编程。
+3年后-英国剑桥大学（根据↑的理论）开发出世界第一台程序存储电子计算机-EDSAC-之后的计算机都是基于冯·诺依曼的程序存储的结构体系的。
+</code></pre>">1946年2月-美国宾夕法尼亚大学-第一台电子计算机-ENIAC-主要缺点：十进制（非二进制）表示和计算数据，而且只能通过手工设置开关和插头来编程。
+3年后-英国剑桥大学（根据↑的理论）开发出世界第一台程序存储电子计算机-EDSAC-之后的计算机都是基于冯·诺依曼的程序存储的结构体系的。
+</code></pre><h3 id="冯·诺依曼“程序存储”计算机的组成结构"><a name="冯·诺依曼“程序存储”计算机的组成结构" href="#冯·诺依曼“程序存储”计算机的组成结构"></a>冯·诺依曼“程序存储”计算机的组成结构</h3><p><code>冯·诺依曼-美籍匈牙利科学家-计算机之父-提出“程序存储”思想，采用二进制作为计算机数制基础，使计算机按照人预先编制的程序工作。</code><br>组成机构</p><pre><code data-origin="<pre><code>1.把需要的程序和数据送至计算机中
+2.必须具有长期记忆程序、数据、中间结果及最终运算结果的能力
+3.能够完成各种算术、逻辑运算和数据传送等数据加工处理的能力
+4.能够根据需要控制程序走向，并根据指令控制机器的各部件协调操作
+5.能够按照要求将处理结果输出给用户
+</code></pre>">1.把需要的程序和数据送至计算机中
+2.必须具有长期记忆程序、数据、中间结果及最终运算结果的能力
+3.能够完成各种算术、逻辑运算和数据传送等数据加工处理的能力
+4.能够根据需要控制程序走向，并根据指令控制机器的各部件协调操作
+5.能够按照要求将处理结果输出给用户
+</code></pre><p>完成上述功能，计算机必须具备的5大基本组成部件</p><pre><code data-origin="<pre><code>1.输入数据和程序的输入设备
+2.记忆程序和数据的存储器
+3.完成数据加工处理的运算器
+4.控制程序执行的控制器
+5.输出处理结果的输出设备
+</code></pre>">1.输入数据和程序的输入设备
+2.记忆程序和数据的存储器
+3.完成数据加工处理的运算器
+4.控制程序执行的控制器
+5.输出处理结果的输出设备
+</code></pre><h3 id="电子计算机发展所经历的四个阶段"><a name="电子计算机发展所经历的四个阶段" href="#电子计算机发展所经历的四个阶段"></a>电子计算机发展所经历的四个阶段</h3><p>1.第一代-电子管计算机时代-20世纪40年代中期到20世纪50年代中期<br>2.第二代-晶体管计算机时代-20世纪50年代中期到20世纪60年代中期<br>3.第三代-集成电路计算机时代-20世纪60年代中期到20世纪70年代中期<br>4.第四代-大规模集成电路时代-20世纪70年代初至今</p><h2 id="计算机的特点、用途、分类以及未来发展趋势（识记）"><a name="计算机的特点、用途、分类以及未来发展趋势（识记）" href="#计算机的特点、用途、分类以及未来发展趋势（识记）"></a>计算机的特点、用途、分类以及未来发展趋势（识记）</h2><p>1.特点</p><pre><code data-origin="<pre><code>计算速度快-每秒几十亿甚至亿亿次
+计算精度高-例如圆周率，精确到兆亿位
+逻辑性强-
+数据处理量大
+自动化程度高
+应用领域广泛
+</code></pre>">计算速度快-每秒几十亿甚至亿亿次
+计算精度高-例如圆周率，精确到兆亿位
+逻辑性强-
+数据处理量大
+自动化程度高
+应用领域广泛
+</code></pre><p>3.2.用途（应用）</p><pre><code data-origin="<pre><code>1.科学计算
+2.信息管理
+3.自动控制
+4.人工智能
+5.辅助工程
+6.学习娱乐
+7.电子商务
+</code></pre>">1.科学计算
+2.信息管理
+3.自动控制
+4.人工智能
+5.辅助工程
+6.学习娱乐
+7.电子商务
+</code></pre><p>3.分类</p><pre><code data-origin="<pre><code>1.按计算机规模分类——巨型机、大型机、小型机、微型机、单片机
+2.按计算机构成器件分类——电子计算机、光子计算机、量子计算机、生物计算机
+3.按计算机用途分类——通用计算机、专用计算机
+4.按计算机使用电信号形式分类——模拟计算机、数字计算机
+5.微型计算机分类（我们日常接触最多的）——台式机、笔记本、平板、智能移动终端
+</code></pre>">1.按计算机规模分类——巨型机、大型机、小型机、微型机、单片机
+2.按计算机构成器件分类——电子计算机、光子计算机、量子计算机、生物计算机
+3.按计算机用途分类——通用计算机、专用计算机
+4.按计算机使用电信号形式分类——模拟计算机、数字计算机
+5.微型计算机分类（我们日常接触最多的）——台式机、笔记本、平板、智能移动终端
+</code></pre><p>4.未来发展趋势</p><pre><code data-origin="<pre><code>1.网络化——云计算、物联网、大数据。。。。
+2.智能化
+3.巨型化和微型化
+</code></pre>">1.网络化——云计算、物联网、大数据。。。。
+2.智能化
+3.巨型化和微型化
+</code></pre><h2 id="微型计算机的硬件组成及各部分功能（领会）"><a name="微型计算机的硬件组成及各部分功能（领会）" href="#微型计算机的硬件组成及各部分功能（领会）"></a>微型计算机的硬件组成及各部分功能（领会）</h2><p>计算机硬件：指计算机系统中由机械和光电元件组成的各种物理装置的总称。<br>微型计算机：从外观看主要有机箱<strong>内部设备</strong>和<strong>外部设备</strong></p><pre><code data-origin="<pre><code>内部设备：
+CPU、内存、主板、硬盘、光驱、各种扩展卡、连接线、电源等
+
+外部设备：
+鼠标、键盘、显示器、音响等
+</code></pre>">内部设备：
+CPU、内存、主板、硬盘、光驱、各种扩展卡、连接线、电源等
+
+外部设备：
+鼠标、键盘、显示器、音响等
+</code></pre><p>通常这些设备归为计算机的五个基本组成部分：<br><strong>运算器、控制器、存储器、输入设备、输出设备</strong><br>其中<strong>运算器</strong>和<strong>控制器</strong>共同构成<strong>CPU</strong></p><h3 id="中央处理器cpu的组成和作用，cpu主要性能指标"><a name="中央处理器cpu的组成和作用，cpu主要性能指标" href="#中央处理器cpu的组成和作用，cpu主要性能指标"></a>中央处理器CPU的组成和作用，CPU主要性能指标</h3><p>CPU的组成：</p><pre><code data-origin="<pre><code>运算器：
+计算机的加工处理部件，运算功能由一个称为算“数运算单元（简称ALU）”的数字电路实现的。
+ALU的数据信号端：有两个输入端和一个输出端。
+ALU运算包括：算数运算和逻辑运算。
+ALU没有记忆保存功能
+ALU的处理结果由-寄存器-临时保存
+运算器的工作收控制器指挥
+</code></pre>">运算器：
+计算机的加工处理部件，运算功能由一个称为算“数运算单元（简称ALU）”的数字电路实现的。
+ALU的数据信号端：有两个输入端和一个输出端。
+ALU运算包括：算数运算和逻辑运算。
+ALU没有记忆保存功能
+ALU的处理结果由-寄存器-临时保存
+运算器的工作收控制器指挥
+</code></pre><pre><code data-origin="<pre><code>控制器：
+由
+程序计数器PC
+指令寄存器IR
+指令译码器ID
+操作控制器OC
+时序信号产生器
+等部件组成
+</code></pre>">控制器：
+由
+程序计数器PC
+指令寄存器IR
+指令译码器ID
+操作控制器OC
+时序信号产生器
+等部件组成
+</code></pre><p><em>运算器和控制器中都有寄存器（Register），可以分为通用寄存器和专用寄存器两大类</em></p><p>CPU的作用：</p><pre><code data-origin="<pre><code>1.程序控制
+2.操作控制
+3.时间控制
+4.数据运算
+
+还有：输入/输出管理、总线控制、中断处理等任务
+</code></pre>">1.程序控制
+2.操作控制
+3.时间控制
+4.数据运算
+
+还有：输入/输出管理、总线控制、中断处理等任务
+</code></pre><p>CPU的主要性能指标：</p><pre><code data-origin="<pre><code>1.时钟频率（主频）：CPU内数字脉冲信号震荡速度，越高越好，单位Hz
+2.外频：CPU与主板同步运行速度，越高越好
+3.前端总线频率：可以表示CPU和总线的数据传输速度，越高越好
+4.指令系统和字长：指令系统指能执行的全部指令集合。字长是CPU一次能并行处理二进制数的位数，32位、64位等。
+</code></pre>">1.时钟频率（主频）：CPU内数字脉冲信号震荡速度，越高越好，单位Hz
+2.外频：CPU与主板同步运行速度，越高越好
+3.前端总线频率：可以表示CPU和总线的数据传输速度，越高越好
+4.指令系统和字长：指令系统指能执行的全部指令集合。字长是CPU一次能并行处理二进制数的位数，32位、64位等。
+</code></pre><h3 id="存储器的各种分类方法"><a name="存储器的各种分类方法" href="#存储器的各种分类方法"></a>存储器的各种分类方法</h3><pre><code data-origin="<pre><code>1.按存储介质分类
+半导体存储：TTL或MOS半导体器件构成，如内存。
+磁性材料：如磁带，普通硬盘
+光介质：如光盘
+
+2.按存取方式分类
+随机存取存储器（RAM）
+顺序存取存储器
+直接存取存储器
+按内容访问存储区
+
+3.按信息的可更改性分类
+读写存储器：如：RAM
+只读存储器：如：ROM
+
+4.按断电后信息的可保存性分类
+非易失性存储器：断电数据保留，如：ROM、磁盘、光盘
+易失性存储器：断电数据丢失，如：RAM、Cache等
+
+5.按所处位置及功能分类
+内部存储器：
+    高速缓冲存储器：速度块，容量小，价格高
+    主存储器：介于上下两者之间
+外部存储器：
+    外存储器：速度慢，容量大，价格便宜
+</code></pre>">1.按存储介质分类
+半导体存储：TTL或MOS半导体器件构成，如内存。
+磁性材料：如磁带，普通硬盘
+光介质：如光盘
+
+2.按存取方式分类
+随机存取存储器（RAM）
+顺序存取存储器
+直接存取存储器
+按内容访问存储区
+
+3.按信息的可更改性分类
+读写存储器：如：RAM
+只读存储器：如：ROM
+
+4.按断电后信息的可保存性分类
+非易失性存储器：断电数据保留，如：ROM、磁盘、光盘
+易失性存储器：断电数据丢失，如：RAM、Cache等
+
+5.按所处位置及功能分类
+内部存储器：
+    高速缓冲存储器：速度块，容量小，价格高
+    主存储器：介于上下两者之间
+外部存储器：
+    外存储器：速度慢，容量大，价格便宜
+</code></pre><h3 id="常用的输入输出设备"><a name="常用的输入输出设备" href="#常用的输入输出设备"></a>常用的输入输出设备</h3><p>主要输入设备：<br>1.键盘<br>2.鼠标<br>3.扫描仪<br>4.麦克风<br>5.摄像头<br>6.触摸屏<br>主要输出设备：<br>1.显示器<br>2.打印机<br>3.音响和耳机</p><h3 id="计算机主板的构造和功能，识别微型计算机的各种接口"><a name="计算机主板的构造和功能，识别微型计算机的各种接口" href="#计算机主板的构造和功能，识别微型计算机的各种接口"></a>计算机主板的构造和功能，识别微型计算机的各种接口</h3><p>主板：又称主机板（Mainboard）、系统板（systemboard）和母版（motherboard），微型计算机中最主要的一个集成电路板。</p><p>主板构造：</p><pre><code data-origin="<pre><code>形态上：是一块矩形印制电路板（PCB），通常采用四层板或六层板。
+板面分布有：电容、电阻、总线、芯片组、各种插槽和接口
+</code></pre>">形态上：是一块矩形印制电路板（PCB），通常采用四层板或六层板。
+板面分布有：电容、电阻、总线、芯片组、各种插槽和接口
+</code></pre><p>主板功能：</p><pre><code data-origin="<pre><code>将计算机的各个硬件有机地联系在一起。
+CPU、存储器、输入输出设备的控制卡（适配器）等各种器件通过主板上的插槽、接口、总线以及数据线相连，从而能够协同配合工作。
+</code></pre>">将计算机的各个硬件有机地联系在一起。
+CPU、存储器、输入输出设备的控制卡（适配器）等各种器件通过主板上的插槽、接口、总线以及数据线相连，从而能够协同配合工作。
+</code></pre><p>总线、内部接口：</p><pre><code data-origin="<pre><code>总线（Bus)：连接CPU与其他设备的一组信号线。
+    控制总线：发送CPU指令到存储器和输入输出设备
+    地址总线：发送存储器地址
+    数据总线：在存储器和输入输出设备间传输数据
+
+芯片组（Chipset）：一组辅助CPU工作的超大规模集成电路，用来控制和协调CPU和外部设备之间的联系。
+    南桥（South Bridge）：离CPU较远，负责CPU与外存、外围设备的数据交换，数据量较小，无散热片。
+    北桥（North Bridge）：靠近CPU，负责CPU与内存的数据交换、控制显卡等。与CPU交互频繁，数据处理量大，容易发热，有散热片。
+
+内存插槽：用来插内存
+PCI扩展插槽：用来连接声卡、显卡、网卡等
+IDE插槽：用来连接硬盘、光驱等
+</code></pre>">总线（Bus)：连接CPU与其他设备的一组信号线。
+    控制总线：发送CPU指令到存储器和输入输出设备
+    地址总线：发送存储器地址
+    数据总线：在存储器和输入输出设备间传输数据
+
+芯片组（Chipset）：一组辅助CPU工作的超大规模集成电路，用来控制和协调CPU和外部设备之间的联系。
+    南桥（South Bridge）：离CPU较远，负责CPU与外存、外围设备的数据交换，数据量较小，无散热片。
+    北桥（North Bridge）：靠近CPU，负责CPU与内存的数据交换、控制显卡等。与CPU交互频繁，数据处理量大，容易发热，有散热片。
+
+内存插槽：用来插内存
+PCI扩展插槽：用来连接声卡、显卡、网卡等
+IDE插槽：用来连接硬盘、光驱等
+</code></pre><p>外部接口：</p><pre><code data-origin="<pre><code>计算机内外部进行通信的结合处称之为通信接口，结成接口。
+串行接口（串口）：通过一条传输线将二进制数据的各个位顺序传输，同一时刻一个二进制位。
+并行接口（并口）：通过多条传输线路，在同一时刻传输多个二进制位。
+
+PS/2：连接鼠标键盘
+VGA：连接显示器、投影仪
+COM1：基本淘汰了
+RJ-45：网口
+USB：硬盘、MP3、打印机、鼠标、键盘、智能手机等等
+1.可以热插拔
+2.方便携带
+3.标准统一
+4.可以连接多个设备
+</code></pre>">计算机内外部进行通信的结合处称之为通信接口，结成接口。
+串行接口（串口）：通过一条传输线将二进制数据的各个位顺序传输，同一时刻一个二进制位。
+并行接口（并口）：通过多条传输线路，在同一时刻传输多个二进制位。
+
+PS/2：连接鼠标键盘
+VGA：连接显示器、投影仪
+COM1：基本淘汰了
+RJ-45：网口
+USB：硬盘、MP3、打印机、鼠标、键盘、智能手机等等
+1.可以热插拔
+2.方便携带
+3.标准统一
+4.可以连接多个设备
+</code></pre><h2 id="计算机软件的作用和分类，软件如何操控硬件进行工作（领会）"><a name="计算机软件的作用和分类，软件如何操控硬件进行工作（领会）" href="#计算机软件的作用和分类，软件如何操控硬件进行工作（领会）"></a>计算机软件的作用和分类，软件如何操控硬件进行工作（领会）</h2><h3 id="系统软件和应用软件，商品软件、共享软件和自由软件的含义和实例"><a name="系统软件和应用软件，商品软件、共享软件和自由软件的含义和实例" href="#系统软件和应用软件，商品软件、共享软件和自由软件的含义和实例"></a>系统软件和应用软件，商品软件、共享软件和自由软件的含义和实例</h3><p>软件分类：</p><pre><code data-origin="<pre><code>系统软件：
+泛指为了有效的使用计算机系统，为应用软件开发与运行提供支持，或者能为用户管理和使用计算机提供方便的一类软件。
+例如：
+    基本输入/输出系统（BIOS）
+    操作系统（windows、macos、linux）
+    程序设计语言处理系统（C语言编译器，Java语言编译器）
+    数据库管理系统（Oracle、sql server、access）
+特征：
+    它与硬件有很强的交互性，
+    能对硬件资源进行统一的控制、调度和管理
+    有一定的通用性。
+
+应用软件：
+泛指那些专门用于解决各种具体应用问题的软件或程序。
+1.通用应用软件
+    由于这些软件几乎人人都需要使用，所以把他们称为通用应用软件。
+    文字处理软件（word、excel、PDF）
+    游戏软件
+    媒体播放软件
+    网络通信软件
+3.2.定制应用软件
+    按照不同领域用户的特定应用要求而专门设计开发的软件，因为针对特定用户，所以价格要贵很多。
+    ERP
+    学校教务管理软件
+    医院挂号计费系统
+    酒店客房管理系统等
+</code></pre>">系统软件：
+泛指为了有效的使用计算机系统，为应用软件开发与运行提供支持，或者能为用户管理和使用计算机提供方便的一类软件。
+例如：
+    基本输入/输出系统（BIOS）
+    操作系统（windows、macos、linux）
+    程序设计语言处理系统（C语言编译器，Java语言编译器）
+    数据库管理系统（Oracle、sql server、access）
+特征：
+    它与硬件有很强的交互性，
+    能对硬件资源进行统一的控制、调度和管理
+    有一定的通用性。
+
+应用软件：
+泛指那些专门用于解决各种具体应用问题的软件或程序。
+1.通用应用软件
+    由于这些软件几乎人人都需要使用，所以把他们称为通用应用软件。
+    文字处理软件（word、excel、PDF）
+    游戏软件
+    媒体播放软件
+    网络通信软件
+3.2.定制应用软件
+    按照不同领域用户的特定应用要求而专门设计开发的软件，因为针对特定用户，所以价格要贵很多。
+    ERP
+    学校教务管理软件
+    医院挂号计费系统
+    酒店客房管理系统等
+</code></pre><p>按照用户获取软件的不同方式进行划分：</p><pre><code data-origin="<pre><code>商品软件：本质是一种可以买卖的商品，用户需要付费才能得到其使用权。
+共享软件：买前“免费试用”的具有版权的软件，允许复制散发（不许修改后散发），过期后继续使用需要付费。
+自由软件：又称（开源软件），理念是自由、免费、共享。
+</code></pre>">商品软件：本质是一种可以买卖的商品，用户需要付费才能得到其使用权。
+共享软件：买前“免费试用”的具有版权的软件，允许复制散发（不许修改后散发），过期后继续使用需要付费。
+自由软件：又称（开源软件），理念是自由、免费、共享。
+</code></pre><h3 id="程序设计语言的作用和分类，高级语言的编译和解释过程，计算机指令的含义和格式"><a name="程序设计语言的作用和分类，高级语言的编译和解释过程，计算机指令的含义和格式" href="#程序设计语言的作用和分类，高级语言的编译和解释过程，计算机指令的含义和格式"></a>程序设计语言的作用和分类，高级语言的编译和解释过程，计算机指令的含义和格式</h3><p>程序设计语言的作用：<code>是人与计算机进行交流的语言。</code><br>分类：</p><pre><code data-origin="<pre><code>机器语言：能由计算机直接识别和执行，最底层的程序设计语言，工作效率高，能直接驱动硬件工作，记忆困难，可移植性差。
+汇编语言：相对机器语言简单一些，采用约定的英文符号（助记符）来表示各种操作命令和操作数。
+高级语言：更接近人类语言的程序设计语言，易学易懂，符合人的思维习惯。
+</code></pre>">机器语言：能由计算机直接识别和执行，最底层的程序设计语言，工作效率高，能直接驱动硬件工作，记忆困难，可移植性差。
+汇编语言：相对机器语言简单一些，采用约定的英文符号（助记符）来表示各种操作命令和操作数。
+高级语言：更接近人类语言的程序设计语言，易学易懂，符合人的思维习惯。
+</code></pre><p>高级语言的翻译过程：</p><pre><code data-origin="<pre><code>有两种形式：
+编译：指程序写完后，用编译器编译成二进制代码再执行的程序，无法查看源代码。编译型语言：C语言等
+解释：指程序运行过程中，由解释器边解释边执行，可以看到源代码的语言。解释型语言：python语言等
+</code></pre>">有两种形式：
+编译：指程序写完后，用编译器编译成二进制代码再执行的程序，无法查看源代码。编译型语言：C语言等
+解释：指程序运行过程中，由解释器边解释边执行，可以看到源代码的语言。解释型语言：python语言等
+</code></pre><p>计算机指令：指计算机硬件执行某种操作的命令。<br>计算机指令格式：指令用二进制代码表示的形式，通常由若干个字段构成，主要包括操作码和地址码字段。</p><h2 id="衡量微型计算机的主要性能指标（识记）"><a name="衡量微型计算机的主要性能指标（识记）" href="#衡量微型计算机的主要性能指标（识记）"></a>衡量微型计算机的主要性能指标（识记）</h2><p>1.CPU性能指标<br>    机器字长：32位、64位<br>    运算速度：主频=外频*倍频<br>2.内存容量<br>3.输入输出数据传输速率</p><p>除了以上这些，可能还会考虑<br>1.可靠性<br>2.兼容性<br>3.性价比<br>4.用户体验感等方面</p><h2 id="信息在计算机中的表示（领会）"><a name="信息在计算机中的表示（领会）" href="#信息在计算机中的表示（领会）"></a>信息在计算机中的表示（领会）</h2><h3 id="数制的含义，二进制数、八进制数、十进制数、十六进制数的表示及互相转换"><a name="数制的含义，二进制数、八进制数、十进制数、十六进制数的表示及互相转换" href="#数制的含义，二进制数、八进制数、十进制数、十六进制数的表示及互相转换"></a>数制的含义，二进制数、八进制数、十进制数、十六进制数的表示及互相转换</h3><p>数制：人们利用数字符号来计数的方法。将数字符号排列，由低位到高位仅为技术的方法称为进位计数制。概括起来就是“逢几进一”就是几进制数。<br>一个数无论采用哪种数制表示，都包含两个基本要素：</p><pre><code data-origin="<pre><code>基数：指数制允许使用的基本数字符号的个数。
+位权：一个数字符号所表示的数值就等于该数字乘以一个与它所在数位有关的常数，这个常数称之为位权
+</code></pre>">基数：指数制允许使用的基本数字符号的个数。
+位权：一个数字符号所表示的数值就等于该数字乘以一个与它所在数位有关的常数，这个常数称之为位权
+</code></pre><p>二进制数特点：<br>1.容易实现<br>2.工作可靠<br>3.运算简单<br>4.便于逻辑运算和逻辑设计</p><h3 id="西文ascii码的编码方式，汉字的输入码、交换码、机内码和输出码的含义和作用"><a name="西文ascii码的编码方式，汉字的输入码、交换码、机内码和输出码的含义和作用" href="#西文ascii码的编码方式，汉字的输入码、交换码、机内码和输出码的含义和作用"></a>西文ASCII码的编码方式，汉字的输入码、交换码、机内码和输出码的含义和作用</h3><p>ASCII码的编码方式：</p><pre><code data-origin="<pre><code>最常用的字符编码方案ASCII码（美国信息交换标准代码），采用7位二进制数编码，表示128个不同字符，其中95个字符可以从计算机标准键盘中输入并可以显示和打印（例如：大小写字符，0-9数字），另外33个字符是控制码，用于控制计算机设备或软件的运行（例如：回车，作用是换行。这些字符不能被显示和打印出来）。
+</code></pre>">最常用的字符编码方案ASCII码（美国信息交换标准代码），采用7位二进制数编码，表示128个不同字符，其中95个字符可以从计算机标准键盘中输入并可以显示和打印（例如：大小写字符，0-9数字），另外33个字符是控制码，用于控制计算机设备或软件的运行（例如：回车，作用是换行。这些字符不能被显示和打印出来）。
+</code></pre><p>汉字在计算机中被表示，需要经过输入、处理、输出三个环节，根据汉字在计算机表示中所处的环节不同，其编码方式主要分为四类。<br>1.输入码（外码）</p><pre><code data-origin="<pre><code>使每个汉字用一个或几个键来表示，这种对每个汉字用相应键位进行编码的表示方法称为汉字的输入码，又称外码。
+主要有：
+数字编码：例如：电报码、区位码等
+字音编码：例如：汉语拼音编码
+字形编码：例如；五笔字型输入码
+</code></pre>">使每个汉字用一个或几个键来表示，这种对每个汉字用相应键位进行编码的表示方法称为汉字的输入码，又称外码。
+主要有：
+数字编码：例如：电报码、区位码等
+字音编码：例如：汉语拼音编码
+字形编码：例如；五笔字型输入码
+</code></pre><p>2.交换码</p><pre><code data-origin="<pre><code>计算机内部处理的信息，都是用二进制代码表示的，汉字也是。而二进制使用起来不是很方便，于是需要采用信息交换码。
+《信息交换用汉字编码字符集 基本集》（GB2312--1980）：即国标码作为国家标准汉字编码。
+</code></pre>">计算机内部处理的信息，都是用二进制代码表示的，汉字也是。而二进制使用起来不是很方便，于是需要采用信息交换码。
+《信息交换用汉字编码字符集 基本集》（GB2312--1980）：即国标码作为国家标准汉字编码。
+</code></pre><p>3.机内码</p><pre><code data-origin="<pre><code>汉字要在计算机中处理和存储，必须要变成由0和1组成的二进制代码的形式，这就是汉字的机内码，简称内码。
+</code></pre>">汉字要在计算机中处理和存储，必须要变成由0和1组成的二进制代码的形式，这就是汉字的机内码，简称内码。
+</code></pre><p>4.汉字字形码</p><pre><code data-origin="<pre><code>汉字在显示和打印输出时，是以汉字字形表示的，即点阵的方式形成汉字的图形。
+汉字字形码又称为汉字输出吗或汉字字模，它是将汉字字形经过点阵数字化后形成的一串二进制数，用于汉字的显示和打印。
+</code></pre>">汉字在显示和打印输出时，是以汉字字形表示的，即点阵的方式形成汉字的图形。
+汉字字形码又称为汉字输出吗或汉字字模，它是将汉字字形经过点阵数字化后形成的一串二进制数，用于汉字的显示和打印。
+</code></pre>
+
+<footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>
+
